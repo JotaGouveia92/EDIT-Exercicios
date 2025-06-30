@@ -1,3 +1,5 @@
+// Exercico 01
+
 // # - Criar um ficheiro html com uma tag script;
 // # - Criar uma class chamada Ecommerce;
 // # - Criar os seguintes métodos para a class:
