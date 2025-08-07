@@ -1,0 +1,372 @@
+@import 'colors';
+@import 'reset';
+@import 'typography';
+@import 'mixins';
+
+%btn {
+	padding: 9px 18px;
+	font-size: $sizeMenu;
+	@include background(black);
+}
+
+%tab {
+	box-shadow: 0px 2px 11px 0px $dark-gray;
+	border-radius: 50px;
+	padding: 6px 10px;
+	margin: 0 5px;
+	font-size: 0.85rem;
+}
+
+body {
+	container-type: inline-size;
+
+	/* Header */
+
+	header {
+		width: 100%;
+		padding: 10px 18px;
+		background-color: $white;
+		z-index: 1000;
+		&.fixed {
+			position: fixed;
+			box-shadow: 0px 2px 6px 0px $dark-gray;
+		}
+		.nav {
+			@include flex(space-between, center, row);
+			container-type: inline-size;
+			img {
+				width: 105px;
+				margin-right: 70px;
+			}
+			&-right {
+				@include flex(space-between, center, row);
+				font-size: $sizeMenu;
+
+				&-menu {
+					@include flex(space-between, center, row);
+
+					@include tablet {
+						display: none;
+					}
+
+					li {
+						position: relative;
+						a {
+							color: $black;
+							margin: 0 7px;
+						}
+						&.has-submenu:hover .nav-right-menu-sub {
+							display: block;
+						}
+						.nav-right-menu-sub {
+							display: none;
+							position: absolute;
+							top: 52px;
+							margin-left: 10px;
+							width: 135px;
+							padding: 8px;
+							box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+							z-index: 10;
+							background-color: $white;
+							li:first-child {
+								margin-bottom: 10px;
+								a {
+									color: $black;
+								}
+							}
+						}
+					}
+				}
+			}
+			&-buttons {
+				@include flex(right, center, row);
+				.btn {
+					@extend %btn;
+					display: inline-block;
+				}
+
+				.btn-white {
+					@include background(white);
+					color: $black;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+
+	/* MAIN */
+
+	main {
+		padding-top: 70px;
+		@include flex(center, center, column);
+
+		.hero {
+			@include flex(center, center, column);
+			width: 835px;
+
+			@include tablet {
+				width: 100%;
+				padding: 0 15px;
+			}
+
+			&-buttons {
+				margin: 20px 0 36px 0;
+				.btn {
+					@extend %btn;
+					display: inline;
+					padding: 12px 17px;
+					transition: 0.5s ease-out;
+					border: 2px solid $blue;
+					&:first-child {
+						@include background(blue);
+						&:hover {
+							@include background(white);
+						}
+					}
+				}
+			}
+			&-video {
+				margin-top: 20px;
+				position: relative;
+				video {
+					width: 665px;
+
+					@include tablet {
+						width: 100%;
+					}
+				}
+				.btn {
+					@extend %btn;
+					@include background(blue);
+					position: absolute;
+					padding: 7px 16px;
+					bottom: -15px;
+					left: 50%;
+					transform: translateX(-50%);
+					border-radius: 50px;
+					transition: 0.5s ease-out;
+					border: 2px solid $blue;
+					&:hover {
+						@include background(white);
+					}
+				}
+			}
+		}
+
+		.heroImage {
+			@include flex(center, center, column);
+			background-color: $light-gray;
+			margin: 110px 0;
+			position: relative;
+			width: 100%;
+			height: 520px;
+			&-absolute {
+				@include flex(center, center, column);
+				position: absolute;
+				top: 0;
+				width: 60%;
+
+				@include tablet {
+					width: 100%;
+					padding: 0 15px;
+				}
+
+				hr {
+					border: 1px solid $dark-gray;
+					width: 90px;
+					transform: rotate(90deg);
+					margin-bottom: 35px;
+				}
+				img {
+					width: 66%;
+					margin-top: 20px;
+					box-shadow: 0px 10px 20px 0px $dark-gray;
+
+					@include tablet {
+						width: 100%;
+					}
+				}
+			}
+		}
+		.solutions {
+			margin: 100px 0;
+			@include tablet {
+				margin: 50px 0;
+			}
+
+			.text {
+				width: 70%;
+				transform: translate(20%, 0);
+			}
+			&-section {
+				height: 450px;
+				position: relative;
+
+				@include tablet {
+					height: 750px;
+				}
+				@include mobile {
+					height: 850px;
+				}
+
+				video {
+					display: block;
+					width: 100vw;
+					height: 350px;
+					object-fit: cover;
+					margin-top: 150px;
+				}
+				&-cards {
+					// @include flex(center, center, row);
+					// flex-wrap: wrap;
+					display: grid;
+					grid-template-columns: repeat(3, minmax(280px, 1fr));
+					justify-content: center;
+					gap: 20px;
+					width: 100%;
+					max-width: 1100px;
+					margin: 0 auto;
+					padding: 0 25px;
+					position: absolute;
+					top: -100px;
+					left: 50%;
+					transform: translateX(-50%);
+
+					@include tablet {
+						padding: 0 15px;
+						grid-template-columns: repeat(2, 1fr);
+					}
+					&-card {
+						background: $white;
+						width: 100%;
+						max-width: 350px;
+						padding: 20px;
+						@include flex(center, center, column);
+						transition: 0.5s;
+						border: 1px solid $dark-gray;
+						border-radius: 5px;
+
+						&:hover {
+							@include background(blue);
+							transform: translateY(-10px);
+							border: 0;
+							.circle {
+								background: $white;
+							}
+						}
+						.circle {
+							width: 70px;
+							height: 70px;
+							border-radius: 200px;
+							background: $blue;
+							margin-bottom: 20px;
+						}
+					}
+				}
+			}
+		}
+		.section-cards {
+			@include flex(space-between, center, column);
+
+			@include tablet {
+				padding: 0 15px;
+			}
+
+			.tabs {
+				@include flex(space-between, center, row);
+				margin: 30px 0 50px 0;
+				.tab {
+					@extend %tab;
+				}
+			}
+			.cards {
+				@include flex(center, center, row);
+				flex-wrap: wrap;
+				gap: 20px;
+				.card {
+					width: 350px;
+
+					@include tablet {
+						width: 250px;
+					}
+
+					img {
+						width: 100%;
+					}
+					.tabs {
+						@include flex(flex-start, center, row);
+						margin: 10px 0;
+					}
+
+					.porfile {
+						@include flex(flex-start, flex-start, row);
+						gap: 10px;
+						&-img {
+							background-color: $dark-gray;
+							border-radius: 100px;
+							padding: 3px 6px;
+						}
+						&-name {
+							font-weight: 600;
+							font-size: 1rem;
+						}
+					}
+				}
+			}
+		}
+		.action {
+			@include flex(space-between, center, row);
+			@include background(blue);
+			width: 100%;
+			max-width: 1330px;
+			padding: 80px 18px;
+			margin: 70px 0 40px 0;
+			.btn {
+				@extend %btn;
+				@include background(white);
+			}
+		}
+	}
+
+	/* FOOTER */
+
+	footer {
+		padding: 15px 10.5%;
+		margin: 0 30px;
+		border-top: 1.5px solid $dark-gray;
+		font-weight: 300;
+		@include flex(space-between, flex-start, row);
+
+		@include tablet {
+			margin: 15px;
+			padding: 15px 40px;
+		}
+
+		ul {
+			width: 33.3%;
+
+			@include tablet {
+				padding: 0 15px;
+				background-color: RED;
+			}
+
+			@include mobile {
+				padding: 0 15px;
+				background-color: rgb(12, 236, 207);
+			}
+
+			span {
+				display: inline-block;
+				margin-bottom: 15px;
+			}
+			li {
+				a {
+					color: $black;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
