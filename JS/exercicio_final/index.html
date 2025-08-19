@@ -5,9 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="ecommerce.js"></script>
     <title>Document</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+      }
+
+      img {
+        width: 20%;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 100px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div id="products-container"></div>
+    <div id="products-container" class="wrapper"></div>
     <footer></footer>
   </body>
 </html>

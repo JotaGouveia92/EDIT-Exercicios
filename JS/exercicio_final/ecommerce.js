@@ -112,6 +112,7 @@ fetch("https://fakestoreapi.com/products")
       imgProduct.src = product.image;
       imgProduct.alt = product.title;
       const addButton = document.createElement("button");
+      addButton.textContent = "Adicionar ao carrinho";
       addButton.addEventListener("click", () => {
         shop.addProductToCart(product);
 
@@ -139,11 +140,11 @@ fetch("https://fakestoreapi.com/products")
           .then((response) => response.json())
           .then((data) => {
             console.log("Resposta da API", data);
-            alert(`${product.title} adicionado ao carrinho através da API.`);
+            alert(`${product.title} Adicionado ao carrinho`);
           })
           .catch((error) => {
             console.error("Erro", error);
-            alert("Erro ao enviar para a API.");
+            alert("Erro ao enviar!");
           });
       });
 
