@@ -154,8 +154,6 @@ fetch("https://fakestoreapi.com/products")
 
       container.append(card);
 
-      // FOOTER
-
       let footer = document.getElementsByTagName("footer")[0];
       footer.textContent = `Copyright ${new Date().getFullYear()}`;
     });
