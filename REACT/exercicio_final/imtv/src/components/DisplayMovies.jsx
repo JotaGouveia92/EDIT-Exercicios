@@ -59,14 +59,7 @@ export default function DisplayMovies() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div
-      style={{
-        className: "wrapper",
-        display: "flex",
-        gap: "16px",
-        flexDirection: "column",
-      }}
-    >
+    <div>
       <h1>Popular Movies</h1>
       <div className="grid">
         {movies.popular.results.map((movie) => (

@@ -46,21 +46,22 @@ h1 {
 /* ------------- */
 
 .main {
-  margin: 20px 50px 0 50px;
+  margin: 20px 50px;
+  padding-bottom: 8px;
 }
 
 .main-question {
   text-align: center;
   border: 2px dashed #ca910e;
   padding: 20px;
-  margin: 20px;
+  margin: 40px 0px 40px 0px;
 }
 
 h2 {
   margin-bottom: 8px;
 }
 
-input,
+input[type="text"],
 select {
   border: 1px solid;
   border-radius: 4px;
@@ -71,34 +72,51 @@ select {
 
 /* ------------- */
 
-.form-section {
-  margin: 20px 0px;
-}
-
-.form-section h2 {
-  font-size: 16px;
-}
-
 .form {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-row .form-item {
+  flex: 1;
 }
 
 .form-item {
   margin: 16px 0px;
-  flex: 50%;
 }
 
 .form-item label {
   display: block;
+  margin-bottom: 4px;
 }
 
-.form input [type="radio"] {
-  width: 20px;
+.form-section {
+  margin: 64px 120px;
 }
 
-.form label.radio-btn {
-  display: inline;
+.form-item input[type="text"],
+.form-item select {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 6px;
+  margin-top: 4px;
+}
+
+.form-item .input-radio {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.form-item .input-radio input[type="radio"] {
+  width: auto;
+  margin-right: 8px;
 }
 
 /* ------------- */

@@ -46,28 +46,34 @@
       <section class="form-section">
         <h2>Preencha com os seus dados</h2>
         <form action="#" class="form">
-          <div class="form-item">
-            <label for="firstName">Primeiro Nome</label>
-            <input type="text" id="firstName" />
+          <div class="form-row">
+            <div class="form-item">
+              <label for="firstName"><strong>Primeiro Nome</strong></label>
+              <input type="text" id="firstName" />
+            </div>
+
+            <div class="form-item">
+              <label for="lastName"><strong>Último Nome</strong></label>
+              <input type="text" id="lastName" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-item">
+              <label for="firstName"><strong>Primeiro Nome</strong></label>
+              <input type="text" id="firstName" />
+            </div>
+
+            <div class="form-item">
+              <label for="lastName"><strong>Último Nome</strong></label>
+              <input type="text" id="lastName" />
+            </div>
           </div>
 
           <div class="form-item">
-            <label for="lastName">Último Nome</label>
-            <input type="text" id="lastName" />
-          </div>
-
-          <div class="form-item">
-            <label for="lastName">Último Nome</label>
-            <input type="text" id="lastName" />
-          </div>
-
-          <div class="form-item">
-            <label for="lastName">Último Nome</label>
-            <input type="text" id="lastName" />
-          </div>
-
-          <div class="form-item">
-            <label for="knewQuestion">Como ficou sabendo da PROMO?</label>
+            <label for="knewQuestion"
+              ><strong>Como ficou sabendo da PROMO?</strong></label
+            >
             <select name="knewQuestion" id="knewQuestion">
               <option value="">Selecione...</option>
               <option value="facebook">Facebook</option>
@@ -76,12 +82,31 @@
               <option value="linkedin">Linkedin</option>
             </select>
           </div>
+
           <div class="form-item">
-            <label class="radio-btn">País</label>
-            <input type="radio" id="brazil" value="brazil" name="country" />
-            <label for="brazil" class="radio-btn">Brasil</label>
-            <input type="radio" id="portugal" value="portugal" name="country" />
-            <label for="portugal" class="radio-btn">Portugal</label>
+            <span class="radio-btn"><strong>País</strong></span>
+            <div class="input-radio">
+              <input type="radio" id="brazil" value="brazil" name="country" />
+              <label for="brazil" class="radio-btn">Brasil</label>
+            </div>
+            <div class="input-radio">
+              <input
+                type="radio"
+                id="portugal"
+                value="portugal"
+                name="country"
+              />
+              <label for="portugal" class="radio-btn">Portugal</label>
+            </div>
+            <div class="input-radio">
+              <input
+                type="radio"
+                id="portugal"
+                value="portugal"
+                name="country"
+              />
+              <label for="portugal" class="radio-btn">Outro</label>
+            </div>
           </div>
         </form>
       </section>
