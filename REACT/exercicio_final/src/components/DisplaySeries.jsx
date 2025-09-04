@@ -59,27 +59,31 @@ export default function DisplaySeries() {
   if (loading) return <div>Loading...</div>;
 
   return (
-    <div
-      style={{
-        display: "flex",
-        gap: "16px",
-        flexDirection: "column",
-        width: "100%",
-      }}
-    >
-      <h1>Popular TV</h1>
-      <div className="grid">
-        {series.popular.results.map((serie) => (
-          <Card key={serie.id} data={serie} />
-        ))}
+    <div>
+      <div className="wrapper">
+        <div
+          style={{
+            display: "flex",
+            gap: "16px",
+            flexDirection: "column",
+            width: "100%",
+          }}
+        >
+          <h1>Popular TV</h1>
+          <div className="grid">
+            {series.popular.results.map((serie) => (
+              <Card key={serie.id} data={serie} />
+            ))}
+          </div>
+        </div>
       </div>
-      <h1>Top Rated</h1>
+      <h2 className="title">Top Rated</h2>
       <div className="slider">
         {series.topRated.results.map((serie) => (
           <Card key={serie.id} data={serie} />
         ))}
       </div>
-      <h1>Airing Today</h1>
+      <h2 className="title">Airing Today</h2>
       <div className="slider">
         {series.airingToday.results.map((serie) => (
           <Card key={serie.id} data={serie} />

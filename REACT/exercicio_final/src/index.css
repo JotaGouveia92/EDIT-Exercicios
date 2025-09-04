@@ -1,3 +1,8 @@
+body {
+  margin: 0px;
+  padding-bottom: 80px;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +16,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 0px 24px;
 }
 
 /* CARD */
@@ -54,6 +64,7 @@
   grid-auto-flow: column;
   grid-auto-columns: 300px;
   overflow-x: auto;
+  padding: 0px 24px;
 }
 
 .slider .card {
@@ -68,6 +79,10 @@ a {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.title {
+  padding: 0px 24px;
 }
 
 /* NAVBAR */

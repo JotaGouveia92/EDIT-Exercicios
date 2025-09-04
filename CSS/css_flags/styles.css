@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  font-family: "Inter", sans-serif;
+  --page-background: #222;
+  --flag-width: 300px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: var(--page-background);
+  color: white;
+}
+
+body {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.flag {
+  width: var(--flag-width);
+  aspect-ratio: 4/3;
+  background: gainsboro;
+  position: relative;
+}
+
+.flag::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(240, 240, 240, 0.271),
+    rgba(92, 13, 13, 0.162)
+  );
+}
+
+.flag_title {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* EXERCISE 1 */
+
+.flag--italy {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.flag--italy .area.green {
+  grid-column: 1 / 4;
+  grid-row: 1 / 11;
+  background-color: green;
+}
+
+.flag--italy .area.white {
+  grid-column: 4 / 8;
+  grid-row: 1 / 11;
+  background-color: white;
+}
+
+.flag--italy .area.red {
+  grid-column: 8 / 11;
+  grid-row: 1 / 11;
+  background-color: red;
+}
+
+/* EXERCISE 2 */
+
+.flag--ukraine {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.flag--ukraine .area.blue {
+  grid-column: 1 / -1;
+  grid-row: 1 / 5;
+  background-color: blue;
+}
+
+.flag--ukraine .area.yellow {
+  grid-column: 1 / -1;
+  grid-row: 5 / 11;
+  background-color: yellow;
+}
+
+/* EXERCISE 3 */
+
+.flag--kuwait {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.flag--kuwait .area.green {
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+  background-color: green;
+}
+
+.flag--kuwait .area.white {
+  grid-column: 1 / -1;
+  grid-row: 4 / 6;
+  background-color: white;
+}
+
+.flag--kuwait .area.red {
+  grid-column: 1 / -1;
+  grid-row: 9 / 6;
+  background-color: red;
+}
+
+.flag--kuwait .area.black {
+  grid-column: 1 / 4;
+  grid-row: 1 / 10;
+  background-color: black;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+/* EXERCISE 4 */
+
+.flag--bangladesh {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.flag--bangladesh .area.green {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-color: green;
+}
+
+.flag--bangladesh .area.red {
+  grid-column: 4 / 8;
+  grid-row: 3 / 7;
+  background-color: red;
+  border-radius: 300px;
+}
+
+/* EXERCISE 5 */
+
+.flag--portugal {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.flag--portugal .area.green {
+  grid-column: 1 / -7;
+  grid-row: 1 / -1;
+  background-color: green;
+}
+
+.flag--portugal .area.red {
+  grid-column: 4 / -1;
+  grid-row: 1 / -1;
+  background-color: red;
+}
+
+.flag--portugal .area.yellow {
+  grid-column: 2 / 6;
+  grid-row: 3 / 7;
+  background-color: yellow;
+  border-radius: 300px;
+}
+
+/* EXERCISE 6 */
+
+.flag--japan {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.flag--japan .area.white {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  background-color: white;
+}
+
+.flag--japan .area.red {
+  grid-column: 4 / 8;
+  grid-row: 3 / 7;
+  background-color: red;
+  border-radius: 300px;
+}
+
+/* EXERCISE 7 */
+
+.flag--greece {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(15, 1fr);
+  position: relative;
+  border: 1px solid #000;
+}
+
+.flag--greece .stripe {
+  grid-column: 1 / -1;
+}
+
+.flag--greece .stripe.blue {
+  background-color: #0d5eaf;
+}
+
+.flag--greece .stripe.white {
+  background-color: white;
+}
+
+.flag--greece .cross {
+  grid-row: 1 / 6;
+  grid-column: 1 / 6;
+  background-color: #0d5eaf;
+  z-index: 1;
+}
+
+.flag--greece .cross-horizontal {
+  background-color: white;
+  grid-row: 3;
+  grid-column: 1 / 6;
+  z-index: 2;
+}
+
+.flag--greece .cross-vertical {
+  background-color: white;
+  grid-column: 3;
+  grid-row: 1 / 6;
+  z-index: 2;
+}

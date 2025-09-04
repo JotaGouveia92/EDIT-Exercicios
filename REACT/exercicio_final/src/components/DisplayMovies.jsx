@@ -60,19 +60,21 @@ export default function DisplayMovies() {
 
   return (
     <div>
-      <h1>Popular Movies</h1>
-      <div className="grid">
-        {movies.popular.results.map((movie) => (
-          <Card key={movie.id} data={movie} />
-        ))}
+      <div className="wrapper">
+        <h1>Popular Movies</h1>
+        <div className="grid">
+          {movies.popular.results.map((movie) => (
+            <Card key={movie.id} data={movie} />
+          ))}
+        </div>
       </div>
-      <h1>Now Playing</h1>
+      <h2 className="title">Now Playing</h2>
       <div className="slider">
         {movies.nowPlaying.results.map((movie) => (
           <Card key={movie.id} data={movie} />
         ))}
       </div>
-      <h1>Top Rated</h1>
+      <h2 className="title">Top Rated</h2>
       <div className="slider">
         {movies.topRated.results.map((movie) => (
           <Card key={movie.id} data={movie} />

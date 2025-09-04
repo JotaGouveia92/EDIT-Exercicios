@@ -41,7 +41,7 @@ export default function HomePage() {
   return (
     <div>
       <DisplayMovies />
-      <h1>Airing Today</h1>
+      <h2 className="title">Airing Today</h2>
       <div className="slider">
         {series.results &&
           series.results.map((serie) => <Card key={serie.id} data={serie} />)}
