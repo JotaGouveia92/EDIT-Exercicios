@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div>
+    <div data-margin-top="l" data-margin-bottom="s">
       <form className="form">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" placeholder="Your full name" required />
@@ -9,7 +9,7 @@ export default function ContactForm() {
         <input
           type="email"
           id="email"
-          placeholder="Where can I reply?"
+          placeholder="Write your e-mail"
           required
         />
 
@@ -17,20 +17,12 @@ export default function ContactForm() {
         <input type="tel" id="phone" placeholder="Your phone number" required />
 
         <label htmlFor="company">Company Name</label>
-        <input
-          type="text"
-          id="company"
-          placeholder="Your company or website?"
-        />
+        <input type="text" id="company" placeholder="Which company" />
 
         <label htmlFor="message">Message</label>
-        <textarea
-          id="message"
-          placeholder="Tell me about your idea..."
-          required
-        />
+        <textarea id="message" placeholder="Tell me more" />
 
-        <button type="submit" className="submit">
+        <button type="submit" className="cta-01">
           Send Message
         </button>
       </form>

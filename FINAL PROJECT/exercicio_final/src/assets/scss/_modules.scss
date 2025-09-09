@@ -928,3 +928,62 @@
     }
   }
 }
+
+// FORM
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 640px;
+  margin: 0 auto;
+
+  label {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 12px 0;
+    font-size: 1rem;
+    color: #000;
+    background: transparent;
+    transition: border-color 0.3s;
+
+    &::placeholder {
+      color: #a0a0a0;
+    }
+
+    &:focus {
+      outline: none;
+      border-bottom-color: #000;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+
+  .submit {
+    margin-top: 24px;
+    padding: 16px 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #333;
+    }
+  }
+}

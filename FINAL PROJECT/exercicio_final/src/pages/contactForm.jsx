@@ -1,5 +1,6 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
+import ContactForm from "../components/ContactForm";
 
 export default function Contact() {
   return (
@@ -19,6 +20,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      <ContactForm />
       <Footer />
     </>
   );
