@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Nav() {
   return (
     <div>
@@ -11,12 +13,12 @@ export default function Nav() {
             </a>
           </div>
           <nav className="nav__links">
-            <a className="nav__links-item" href="#">
+            <Link className="nav__links-item" to="/work">
               Work
-            </a>
-            <a className="nav__links-item" href="https://read.cv/joaogouveia">
-              Read cv
-            </a>
+            </Link>
+            <Link className="nav__links-item" to="/aboutMe">
+              About Me
+            </Link>
           </nav>
         </div>
       </div>

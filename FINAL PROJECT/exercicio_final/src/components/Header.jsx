@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
   return (
     <div>
@@ -8,9 +10,11 @@ export default function Header() {
               I'm a product designer & web developer enthusiast willing to
               <span className="header__color"> create great experiences</span>
             </h2>
-            <a href="mailto:email@email.de" className="cta-01">
+
+            <Link to="/contactForm" className="cta-01">
               Let's talk <i className="fas fa-arrow-right"></i>
-            </a>
+            </Link>
+
             <ul className="header__ctaLinks">
               <li>
                 <a href="https://bento.me/joao-gouveia">BENTO</a>
