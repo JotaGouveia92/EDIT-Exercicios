@@ -54,7 +54,27 @@ export default function AboutMe() {
           <div className="gridBrands__img">
             <img src="images/01.png" alt="Sample Image" />
           </div>
-          {/* ... outras imagens ... */}
+          <div className="gridBrands__img">
+            <img src="images/02.png" alt="Sample Image" />
+          </div>
+          <div className="gridBrands__img">
+            <img src="images/03.png" alt="Sample Image" />
+          </div>
+          <div className="gridBrands__img">
+            <img src="images/04.png" alt="Sample Image" />
+          </div>
+          <div className="gridBrands__img">
+            <img src="images/05.png" alt="Sample Image" />
+          </div>
+          <div className="gridBrands__img">
+            <img src="images/06.png" alt="Sample Image" />
+          </div>
+          <div className="gridBrands__img">
+            <img src="images/07.png" alt="Sample Image" />
+          </div>
+          <div className="gridBrands__img">
+            <img src="images/08.png" alt="Sample Image" />
+          </div>
         </div>
       </section>
 
