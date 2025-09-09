@@ -1,6 +1,6 @@
 export default function ContactForm() {
   return (
-    <div data-margin-top="l" data-margin-bottom="s">
+    <div data-margin-top="m" data-margin-bottom="s">
       <form className="form">
         <label htmlFor="name">Name</label>
         <input type="text" id="name" placeholder="Your full name" required />
