@@ -1,6 +1,5 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import Brands from "../components/brands";
 
 export default function Contact() {
   return (
@@ -16,6 +15,7 @@ export default function Contact() {
                 and tell me about your idea
               </span>
             </h2>
+            <p>Have a nice works? Reach out and let's chat.</p>
           </div>
         </div>
       </section>
