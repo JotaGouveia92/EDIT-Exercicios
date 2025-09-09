@@ -6,6 +6,7 @@ import React from "react";
 import App from "./App.jsx";
 import { Link } from "react-router-dom";
 import AboutMe from "./pages/aboutme.jsx";
+import ContactForm from "./pages/contactForm.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/" element={<App />} />
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<ContactForm />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
