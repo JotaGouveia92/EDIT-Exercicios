@@ -29,7 +29,7 @@ export default function ArtworksGrid() {
 
         setArtworks(detailed);
       } catch (err) {
-        console.error("Erro ao buscar artworks:", err);
+        console.error("Erro", err);
       } finally {
         setLoading(false);
       }
@@ -38,7 +38,7 @@ export default function ArtworksGrid() {
   }, []);
 
   useEffect(() => {
-    console.log("Estado artworks atualizado:", artworks);
+    // console.log("Estado artworks atualizado:", artworks);
   }, [artworks]);
 
   if (loading) return <p>Carregando...</p>;
