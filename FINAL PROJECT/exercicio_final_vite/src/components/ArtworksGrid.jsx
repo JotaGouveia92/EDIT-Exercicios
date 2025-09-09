@@ -12,10 +12,8 @@ export default function ArtworksGrid() {
         );
         const data = await res.json();
 
-        // pega só os 3 primeiros
         const firstResults = data.data.slice(0, 3);
 
-        // busca detalhes de cada obra para ter o image_id
         const detailed = await Promise.all(
           firstResults.map(async (art) => {
             const resArt = await fetch(
