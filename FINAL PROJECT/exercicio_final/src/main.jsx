@@ -4,7 +4,6 @@ import "./assets/scss/main.scss";
 import ReactDOM from "react-dom/client";
 import React from "react";
 import App from "./App.jsx";
-import { Link } from "react-router-dom";
 import AboutMe from "./pages/aboutme.jsx";
 import ContactForm from "./pages/contactForm.jsx";
 
