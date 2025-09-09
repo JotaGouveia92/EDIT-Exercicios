@@ -1,6 +1,7 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
 import Brands from "../components/brands";
+import WorkList from "../components/WorkList";
 
 export default function AboutMe() {
   return (
@@ -38,12 +39,7 @@ export default function AboutMe() {
         </div>
       </section>
 
-      <div className="workList" data-margin-top="m" data-margin-bottom="m">
-        <div className="wrapper">
-          <h2 className="workList__title">My Experience</h2>
-          <ul className="workList__list"></ul>
-        </div>
-      </div>
+      <WorkList />
 
       <section
         className="gridBrands"
