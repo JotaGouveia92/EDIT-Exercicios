@@ -1,4 +1,4 @@
-import ArtworksGrid from "../components/ArtworksGrid";
+import ArtworksGrid from "../components/artworksGrid";
 import Brands from "../components/brands";
 import Footer from "../components/footer";
 import Nav from "../components/nav";

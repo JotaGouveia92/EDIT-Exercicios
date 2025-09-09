@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AboutMe from "./pages/aboutMe.jsx";
 import Work from "./pages/work.jsx";
 import "./assets/scss/main.scss";
 import ReactDOM from "react-dom/client";
 import React from "react";
 import App from "./App.jsx";
 import { Link } from "react-router-dom";
+import AboutMe from "./pages/aboutme.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
