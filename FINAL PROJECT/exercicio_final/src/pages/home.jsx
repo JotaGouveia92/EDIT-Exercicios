@@ -3,6 +3,7 @@ import Brands from "../components/brands";
 import Footer from "../components/footer";
 import Header from "../components/Header";
 import Nav from "../components/nav";
+import WorkList from "../components/WorkList";
 
 export default function Home() {
   return (
@@ -65,74 +66,7 @@ export default function Home() {
 
       <ArtworksGrid />
 
-      <div
-        className="workList"
-        data-columns="3"
-        data-margin-top="m"
-        data-margin-bottom="m"
-      >
-        <div className="wrapper">
-          <ul className="workList__list">
-            <li className="workList__item">
-              <div className="workList__item-info">
-                <h4 className="workList__item-title">McDonald's</h4>
-                <p className="workList__item-date">May 5, 2024</p>
-                <div className="workList__item-tags">
-                  <span className="tag-01">UX / UI</span>
-                  <span className="tag-01">Branding</span>
-                </div>
-              </div>
-              <p className="workList__item-description">
-                Far far away, behind the world mountains, far from the countries
-                Vokalia and Consonantia, theresFar far away, behind the world
-                mountains, far from the countries Vokalia.
-              </p>
-              <a href="" className="cta-03">
-                View Project
-              </a>
-            </li>
-
-            <li className="workList__item">
-              <div className="workList__item-info">
-                <h4 className="workList__item-title">Jogos Santa Casa</h4>
-                <p className="workList__item-date">May 5, 2024</p>
-                <div className="workList__item-tags">
-                  <span className="tag-01">UX / UI</span>
-                  <span className="tag-01">Branding</span>
-                </div>
-              </div>
-              <p className="workList__item-description">
-                Far far away, behind the world mountains, far from the countries
-                Vokalia and Consonantia, theresFar far away, behind the world
-                mountains, far from the countries Vokalia.
-              </p>
-              <a href="" className="cta-03">
-                View Project
-              </a>
-            </li>
-
-            <li className="workList__item">
-              <div className="workList__item-info">
-                <h4 className="workList__item-title">McDonalds</h4>
-                <p className="workList__item-date">May 5, 2024</p>
-                <div className="workList__item-tags">
-                  <span className="tag-01">UX / UI</span>
-                  <span className="tag-01">Branding</span>
-                </div>
-              </div>
-              <p className="workList__item-description">
-                Far far away, behind the world mountains, far from the countries
-                Vokalia and Consonantia, theresFar far away, behind the world
-                mountains, far from the countries Vokalia.
-              </p>
-              <a href="" className="cta-03">
-                View Project
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
+      <WorkList />
       <Brands />
 
       <div className="ctaBlock">
