@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import CtaLink from "./CtaLink";
-
 export default function InfoNumbers() {
   return (
     <div>

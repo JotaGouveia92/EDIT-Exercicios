@@ -4,6 +4,7 @@
 @use "_5iconography" as *;
 @use "_6colors" as *;
 
+// NAV
 .nav {
   .wrapper {
     max-width: unset;
@@ -51,6 +52,7 @@
   }
 }
 
+// HEADER
 .header {
   display: flex;
   margin: 104px 0px 0px 0px;
@@ -110,6 +112,7 @@
   }
 }
 
+// INFO NUMBERS
 .infoNumbers {
   &__content {
     display: flex;
@@ -149,6 +152,7 @@
   }
 }
 
+// CONTENT MEDIA
 .contentMedia {
   color: $neutral-color01;
 
@@ -203,6 +207,7 @@
   }
 }
 
+// WOT
 .wot {
   color: #2f2f2f;
 
@@ -214,6 +219,7 @@
   }
 }
 
+// GRID CONTENT
 .gridContent {
   color: $neutral-color03;
 
@@ -331,50 +337,7 @@
   }
 }
 
-.contentMedia {
-  color: $neutral-color01;
-
-  &__column {
-    &:nth-child(1) {
-      grid-column: 1 / 7;
-      grid-row: 1;
-
-      @include tablet {
-        grid-column: 1 / 7;
-      }
-      @include mobile {
-        grid-column: 1 / 7;
-      }
-    }
-
-    &:nth-child(2) {
-      grid-column: 7 / 13;
-      grid-row: 1;
-
-      @include tablet {
-        grid-column: 1 / 7;
-        grid-row: 2;
-      }
-      @include mobile {
-        grid-column: 1 / 7;
-      }
-    }
-  }
-
-  &__title {
-    font-size: 56px;
-    line-height: 64px;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-
-  &__description {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 32px;
-  }
-}
-
+// CTA BLOCK
 .ctaBlock {
   background-color: $neutral-color04;
   padding: 80px 80px;
@@ -431,6 +394,7 @@
   }
 }
 
+// FOOTER
 .footer {
   background: $neutral-color01;
   padding: 30px 0;
@@ -470,6 +434,7 @@
   }
 }
 
+// WORK LIST
 .workList {
   &__title {
     font-size: 40px;
@@ -556,6 +521,7 @@
   }
 }
 
+// GRID BRANDS
 .gridBrands {
   &__title {
     font-size: 40px;
@@ -583,81 +549,7 @@
   }
 }
 
-.mainHeader {
-  color: $neutral-color01;
-  &__column {
-    &:nth-child(1) {
-      grid-column: 1/7;
-
-      @include tablet {
-        grid-column: 1/7;
-      }
-
-      @include mobile {
-        grid-column: 1/7;
-      }
-    }
-
-    &:nth-child(2) {
-      grid-column: 7 / 13;
-      grid-row: 1;
-
-      @include tablet {
-        grid-column: 1 / 7;
-        grid-row: 2;
-      }
-      @include mobile {
-        grid-column: 1 / 7;
-        grid-row: 2;
-      }
-    }
-  }
-
-  &__subtitle {
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 16px;
-    color: $neutral-color01;
-  }
-  &__title {
-    margin-top: 40px;
-    font-size: 104px;
-    line-height: 112px;
-    font-weight: bold;
-    margin-bottom: 16px;
-    color: $neutral-color01;
-
-    mark {
-      color: $main-color;
-    }
-
-    @include tablet {
-      font-size: 64px;
-      line-height: 72px;
-      color: $neutral-color01;
-    }
-
-    @include mobile {
-      font-size: 32px;
-      line-height: 40px;
-      color: $neutral-color01;
-    }
-  }
-
-  &__description {
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 300;
-    color: $neutral-color01;
-
-    @include mobile {
-      font-size: 24px;
-      line-height: 32px;
-      color: $neutral-color01;
-    }
-  }
-}
-
+// SIMPLE MEDIA
 .simpleMedia {
   &__img {
     width: 100%;
@@ -669,8 +561,10 @@
   }
 }
 
+// MAIN HEADER
 .mainHeader {
   color: $neutral-color01;
+
   &__column {
     &:nth-child(1) {
       grid-column: 1/7;
@@ -709,7 +603,7 @@
     font-size: 64px;
     line-height: 72px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-top: 32px;
     color: $neutral-color01;
 
     @include tablet {
@@ -739,6 +633,7 @@
   }
 }
 
+// SIMPLE HEADER
 .simpleHeader {
   color: $neutral-color01;
 
@@ -753,12 +648,20 @@
     line-height: 24px;
   }
 
+  &__date {
+    margin-top: 20px;
+  }
+
+  &__caption {
+    margin-bottom: 8px;
+  }
+
   &__title {
-    margin-top: 40px;
     text-align: center;
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 56px;
     font-weight: bold;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     color: $neutral-color01;
 
     @include mobile {
@@ -790,6 +693,7 @@
   }
 }
 
+// PROJECT BLOCK
 .projectBlock {
   color: $neutral-color01;
   margin-top: 56px;
@@ -881,6 +785,7 @@
   }
 }
 
+// GRID IMAGE
 .gridImage {
   &__content {
     margin: 0 auto;
@@ -899,39 +804,7 @@
   }
 }
 
-.textScrolling {
-  width: 100%;
-  overflow-x: hidden;
-
-  &__item {
-    &-items {
-      display: flex;
-      color: $main-color;
-      font-size: 96px;
-      letter-spacing: 3px;
-      font-weight: bold;
-      width: 2600px;
-      white-space: nowrap;
-
-      animation-name: infiniteScroll;
-      animation-duration: 20s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-    }
-  }
-
-  @keyframes infiniteScroll {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-}
-
 // FORM
-
 .form {
   display: flex;
   flex-direction: column;
@@ -990,7 +863,6 @@
 }
 
 // PATH
-
 .path {
   &__title {
     font-size: 40px;
@@ -1077,6 +949,7 @@
   }
 }
 
+// CONTENT TEXT
 .contentText {
   max-width: 800px;
   margin: 0 auto;
@@ -1085,6 +958,7 @@
     color: #2f2f2f;
     font-size: 24px;
     line-height: 32px;
+    margin-bottom: 8px;
     font-weight: bold;
     max-width: 800px;
   }
@@ -1097,21 +971,7 @@
   }
 }
 
-// @include tablet {
-//   font-size: 80px;
-//   line-height: 88px;
-// }
-
-// @include phablet {
-//   font-size: 64px;
-//   line-height: 72px;
-// }
-
-// @include mobile {
-//   font-size: 35px;
-//   line-height: 43px;
-// }
-
+// GRID IMAGES
 .grid-images {
   display: grid;
   gap: 24px;

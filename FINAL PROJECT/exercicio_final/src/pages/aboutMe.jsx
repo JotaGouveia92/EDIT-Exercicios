@@ -3,7 +3,6 @@ import Footer from "../components/footer";
 import Brands from "../components/brands";
 import WorkList from "../components/WorkList";
 import MainHeader from "../components/MainHeader";
-import SimpleMedia from "../components/SimpleMedia";
 import CtaBlock from "../components/CtaBlock";
 
 export default function AboutMe() {

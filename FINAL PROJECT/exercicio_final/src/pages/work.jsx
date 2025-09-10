@@ -13,22 +13,18 @@ export default function Work() {
       <SimpleHeader />
       <SimpleMedia />
       <ContentText
-        title="Title 01"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at neque vel sapien sagittis maximus. Maecenas faucibus ut justo eu feugiat. Integer efficitur velit ipsum, ultricies ultrices purus laoreet nec. Curabitur id consectetur risus, eu hendrerit tellus. Aliquam suscipit elementum neque eget porta. Praesent ac egestas ligula. Morbi elementum tellus nibh, eget hendrerit tortor faucibus et."
+        title="The Essence of Minimalism"
+        text="At its core, minimalism is about distilling a design down to its essential elements, eliminating excess and focusing on what truly matters. By reducing visual clutter, minimalism allows for better comprehension and a more immersive experience. The use of clean lines, ample white space, and minimal color palettes creates a sense of calmness and sophistication, inviting viewers to engage with the design in a more meaningful way."
       />
       <ContentText
-        title="Title 02"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at neque vel sapien sagittis maximus. Maecenas faucibus ut justo eu feugiat. Integer efficitur velit ipsum, ultricies ultrices purus laoreet nec. Curabitur id consectetur risus, eu hendrerit tellus. Aliquam suscipit elementum neque eget porta. Praesent ac egestas ligula. Morbi elementum tellus nibh, eget hendrerit tortor faucibus et."
+        title="Clarity and Communication"
+        text="One of the key strengths of minimalism lies in its ability to convey messages with clarity and precision. By stripping away unnecessary details, minimalistic designs emphasize the core message or concept, making it easier for viewers to understand and remember. Whether it's a logo, a website, or an advertisement, minimalism cuts through the noise and delivers a clear and impactful visual statement."
       />
       <ContentText
-        title="Title 03"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at neque vel sapien sagittis maximus. Maecenas faucibus ut justo eu feugiat. Integer efficitur velit ipsum, ultricies ultrices purus laoreet nec. Curabitur id consectetur risus, eu hendrerit tellus. Aliquam suscipit elementum neque eget porta. Praesent ac egestas ligula. Morbi elementum tellus nibh, eget hendrerit tortor faucibus et."
+        title="Enhanced User Experience"
+        text="Minimalist design principles also play a crucial role in enhancing the user experience. In today's digital landscape, where attention spans are shrinking, simplicity is paramount. Minimalistic interfaces, with their intuitive navigation and uncluttered layouts, provide users with a seamless and enjoyable experience. By reducing cognitive load, minimalism allows users to focus on the content or functionality, leading to higher engagement and satisfaction."
       />
       <GridImages />
-      <ContentText
-        title="Title 04"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at neque vel sapien sagittis maximus. Maecenas faucibus ut justo eu feugiat. Integer efficitur velit ipsum, ultricies ultrices purus laoreet nec. Curabitur id consectetur risus, eu hendrerit tellus. Aliquam suscipit elementum neque eget porta. Praesent ac egestas ligula. Morbi elementum tellus nibh, eget hendrerit tortor faucibus et."
-      />
       <Brands />
       <Footer />
     </div>
