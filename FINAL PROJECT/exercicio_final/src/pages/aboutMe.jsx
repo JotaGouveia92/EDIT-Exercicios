@@ -4,28 +4,25 @@ import Brands from "../components/brands";
 import WorkList from "../components/WorkList";
 import MainHeader from "../components/MainHeader";
 import SimpleMedia from "../components/SimpleMedia";
+import CtaBlock from "../components/CtaBlock";
 
 export default function AboutMe() {
   return (
     <>
       <Nav />
-      <MainHeader />
-      <SimpleMedia />
+      <MainHeader
+        tag="Projects"
+        title="Innovative designer for a "
+        highlight="digital age"
+        description="With over +7 years of experience, I specialize in creating intuitive
+            and user-centered interfaces for a wide range of digital products
+            and experiences. Far far away, behind the world mountains, far from
+            the countries Vokalia and Consonantia, theres live the blind texts."
+      />
+      {/* <SimpleMedia /> */}
       <WorkList />
       <Brands />
-
-      <div className="ctaBlock">
-        <div className="wrapper">
-          <p className="ctaBlock__description">Have an idea?</p>
-          <h2 className="ctaBlock__title">
-            Let’s rock <mark>with me!</mark>
-          </h2>
-          <button className="cta-01">
-            Let's talk<i className="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-
+      <CtaBlock />
       <Footer />
     </>
   );

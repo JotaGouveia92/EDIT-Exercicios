@@ -1,14 +1,8 @@
 export default function Brands() {
   return (
     <div>
-      <section
-        className="gridBrands"
-        data-margin-top="s"
-        data-margin-bottom="l"
-      >
-        <div className="gridBrands__title">
-          <h3>My clients</h3>
-        </div>
+      <section className="gridBrands" data-margin-bottom="l">
+        <div className="gridBrands__title"></div>
         <div className="gridBrands__content">
           <figure className="gridBrands-img">
             <img src="/images/01.png" alt="logo" />

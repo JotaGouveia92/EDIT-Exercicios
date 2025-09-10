@@ -1,3 +1,9 @@
+@use "_2breakpoints" as *;
+@use "_3skeleton" as *;
+@use "_4typography" as *;
+@use "_5iconography" as *;
+@use "_6colors" as *;
+
 // Tags
 .tag-01 {
   border: 1.5px solid #67686a;
@@ -45,9 +51,9 @@
   text-decoration: none;
   display: inline-flex;
   font-size: 24px;
+  gap: 18px;
   border-radius: 100px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  gap: 24px;
 }
 
 .cta-02 {
@@ -57,6 +63,7 @@
   padding: 24px 40px;
   align-items: center;
   text-decoration: none;
+  gap: 18px;
   font-size: 24px;
   border-radius: 100px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -73,6 +80,7 @@
   font-size: 24px;
   border-radius: 100px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  gap: 18px;
 }
 
 .cta-04 {
@@ -87,5 +95,5 @@
   font-size: 24px;
   border-radius: 100px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  gap: 24px;
+  gap: 18px;
 }

@@ -1,8 +1,8 @@
-@import "./_1reset.scss";
-@import "./_2breakpoints.scss";
-@import "./_3skeleton.scss";
-@import "./_4typography.scss";
-@import "./_5iconography.scss";
-@import "./_6colors.scss";
-@import "./components.scss";
-@import "./modules.scss";
+@use "_1reset" as *;
+@use "_2breakpoints" as *;
+@use "_3skeleton" as *;
+@use "_4typography" as *;
+@use "_5iconography" as *;
+@use "_6colors" as *;
+@use "_components" as *;
+@use "_modules" as *;

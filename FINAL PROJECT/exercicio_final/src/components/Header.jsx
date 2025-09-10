@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import CtaLink from "./CtaLink";
 
 export default function Header() {
   return (
@@ -11,9 +12,12 @@ export default function Header() {
               <span className="header__color"> create great experiences</span>
             </h2>
 
-            <Link to="/contactForm" className="cta-01">
-              Let's talk <i className="fas fa-arrow-right"></i>
-            </Link>
+            <CtaLink
+              text="Let's talk"
+              to="/contactForm"
+              variant="cta-03"
+              icon="fa-arrow-right"
+            />
 
             <ul className="header__ctaLinks">
               <li>
