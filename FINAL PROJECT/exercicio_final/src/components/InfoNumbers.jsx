@@ -4,7 +4,7 @@ export default function InfoNumbers() {
       <section
         className="infoNumbers"
         data-margin-top="l"
-        data-margin-bottom="s"
+        data-margin-bottom="l"
       >
         <div className="wrapper">
           <div className="infoNumbers__content">
