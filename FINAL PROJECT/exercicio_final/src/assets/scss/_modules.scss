@@ -152,6 +152,12 @@
 .contentMedia {
   color: $neutral-color01;
 
+  .grid {
+    @include mobile {
+      gap: 16px;
+    }
+  }
+
   &__column {
     &:nth-child(1) {
       grid-column: 1 / 7;
@@ -182,7 +188,6 @@
   &__title {
     @include font-L;
     font-weight: bold;
-    margin-bottom: 16px;
   }
 
   &__description {
@@ -380,6 +385,13 @@
     color: $neutral-color02;
     @include body;
 
+    @include mobile {
+      display: flex;
+      gap: 24px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
     a {
       text-decoration: none;
       color: $neutral-color03;
@@ -400,7 +412,7 @@
     }
 
     a i {
-      @include font-M;
+      @include font-L;
       margin: 0 1%;
     }
   }
@@ -497,6 +509,14 @@
     text-align: center;
     margin-bottom: 40px;
     color: $neutral-color01;
+
+    @include mobile {
+      @include font-L;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $neutral-color01;
+    }
   }
   &__content {
     display: flex;
@@ -504,12 +524,6 @@
     gap: 56px;
     opacity: 0.5;
     flex-wrap: wrap;
-
-    @include mobile {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
   }
 
   &-img {
@@ -532,6 +546,12 @@
 // MAIN HEADER
 .mainHeader {
   color: $neutral-color01;
+
+  @include mobile {
+    .grid {
+      gap: 16px;
+    }
+  }
 
   &__column {
     &:nth-child(1) {
@@ -585,7 +605,7 @@
     // }
 
     @include mobile {
-      @include font-L;
+      @include font-XL;
       color: $neutral-color01;
     }
   }
@@ -630,12 +650,12 @@
     line-height: 56px;
     font-weight: bold;
     margin-bottom: 8px;
-    color: $neutral-color01;
+    color: $main-color;
 
     @include mobile {
       font-size: 32px;
       line-height: 40px;
-      color: $neutral-color01;
+      color: $main-color;
     }
   }
 
@@ -781,6 +801,10 @@
   max-width: 640px;
   margin: 0 auto;
 
+  @include mobile {
+    margin: 0 5%;
+  }
+
   label {
     font-weight: 600;
     color: #000;
@@ -918,6 +942,10 @@
   max-width: 800px;
   margin: 0 auto;
 
+  @include mobile {
+    margin: 0px 5%;
+  }
+
   &__title {
     color: #2f2f2f;
     font-size: 24px;
@@ -941,6 +969,10 @@
   gap: 24px;
   max-width: 800px;
   margin: 0 auto;
+
+  @include mobile {
+    margin: 0px 5%;
+  }
 
   &__item {
     img {

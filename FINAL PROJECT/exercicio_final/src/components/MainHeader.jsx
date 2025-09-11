@@ -12,7 +12,6 @@ export default function MainHeader({
       // data-margin-top={marginTop}
       // data-margin-bottom={marginBottom}
       data-margin-top="m"
-      data-margin-bottom="m"
     >
       <div className="wrapper grid">
         <div className="mainHeader__column">
