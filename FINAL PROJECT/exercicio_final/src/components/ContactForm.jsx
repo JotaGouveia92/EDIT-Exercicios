@@ -24,15 +24,11 @@ export default function ContactForm() {
         <label htmlFor="message">Message</label>
         <textarea id="message" placeholder="Tell me more" />
 
-        {/* <button type="submit" className="cta-01">
-          Send Message
-        </button> */}
-
         <div style={{ marginTop: "40px" }}>
           <CtaLink
-            text="Send Message"
+            text="Submit"
             to="/contactForm"
-            variant="cta-03"
+            variant="cta-01"
             icon="fa-arrow-right"
           />
         </div>
