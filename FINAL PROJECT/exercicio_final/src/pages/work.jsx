@@ -12,7 +12,10 @@ export default function Work() {
     <div>
       <Nav />
       <SimpleHeader />
-      <SimpleMedia />
+      <SimpleMedia
+        image="images/mcdonalds_campaign.jpg"
+        alt="campanha mcdonalds"
+      />
       <InfoNumbers
         items={[
           { title: "+62k", subtitle: "Participants" },
