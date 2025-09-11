@@ -5,8 +5,8 @@ export default function SimpleMedia() {
         <div className="wrapper">
           <img
             className="simpleMedia__img"
-            src="/images/Eu.JPG"
-            alt="Foto Pessoal"
+            src="/images/mcdonalds_campaign.jpg"
+            alt="Projecto"
           />
         </div>
       </section>

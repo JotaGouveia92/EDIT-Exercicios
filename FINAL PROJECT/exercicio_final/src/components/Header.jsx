@@ -10,13 +10,21 @@ export default function Header() {
               I'm a product designer & web developer enthusiast willing to
               <span className="header__color"> create great experiences</span>
             </h2>
+            <div className="header__buttons">
+              <CtaLink
+                text="Let's talk"
+                to="/contactForm"
+                variant="cta-01"
+                icon="fa-arrow-right"
+              />
 
-            <CtaLink
-              text="Let's talk"
-              to="/contactForm"
-              variant="cta-01"
-              icon="fa-arrow-right"
-            />
+              <CtaLink
+                text="See CV"
+                to="https://www.figma.com/proto/U2KHBbHy80Hi4pDvmyJNwD/CV-2025-JO%C3%83O-GOUVEIA?page-id=667%3A30344&node-id=667-30345&viewport=249%2C145%2C0.15&t=PVVyqq1htdSMGLey-1&scaling=min-zoom&content-scaling=fixed"
+                variant="cta-02"
+                icon="fa-arrow-right"
+              />
+            </div>
 
             <ul className="header__ctaLinks">
               <li>

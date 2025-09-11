@@ -63,6 +63,11 @@
     color: $main-color;
   }
 
+  &__buttons {
+    display: flex;
+    gap: 16px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -350,10 +355,6 @@
 
     mark {
       color: $neutral-color02;
-    }
-
-    @include tablet {
-      @include font-XL;
     }
 
     @include mobile {

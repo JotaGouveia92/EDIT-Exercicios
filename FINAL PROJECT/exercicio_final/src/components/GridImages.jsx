@@ -3,13 +3,13 @@ export default function GridImages() {
     <div data-margin-top="s" data-margin-bottom="l">
       <section className="grid-images">
         <div className="grid-images__item">
-          <img src="/images/Eu.JPG" alt="imagens projecto" />
+          <img src="/images/mcdonalds_campaign_03.jpg" alt="imagens projecto" />
         </div>
         <div className="grid-images__item">
-          <img src="/images/Eu.JPG" alt="imagens projecto" />
+          <img src="/images/mcdonalds_campaign_02.jpg" alt="imagens projecto" />
         </div>
         <div className="grid-images__item">
-          <img src="/images/Eu.JPG" alt="imagens projecto" />
+          <img src="/images/mcdonalds_campaign_01.jpg" alt="imagens projecto" />
         </div>
       </section>
     </div>

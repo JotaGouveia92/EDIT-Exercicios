@@ -7,7 +7,10 @@ export default function SimpleHeader() {
             <p className="simpleHeader__caption">
               <strong>McDonald's</strong>
             </p>
-            <h3 className="simpleHeader__title"> Mood de Mac </h3>
+            <h3 className="simpleHeader__title">
+              {" "}
+              Emotional Campaign - Mood de Mac{" "}
+            </h3>
             <p className="simpleHeader__text">
               In the fast-paced, visually overwhelming world we live in, it's no
               surprise that minimalism has become a powerful trend in the realm
