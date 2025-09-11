@@ -53,7 +53,7 @@ export default function MainHeader({
             <span className="tag-05">{tag}</span>
           </div>
           <h2 className="mainHeader__title">
-            {title} <mark>{highlight}</mark>
+            {title} <span className="mainHeader__underline">{highlight}</span>
           </h2>
         </div>
         <div className="mainHeader__column">

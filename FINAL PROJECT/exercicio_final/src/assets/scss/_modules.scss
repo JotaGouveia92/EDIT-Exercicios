@@ -9,6 +9,7 @@
   .wrapper {
     max-width: unset;
   }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@
   }
 
   &__naming {
-    font-size: 24px;
+    @include font-M;
 
     mark {
       color: $neutral-color02;
@@ -43,10 +44,10 @@
       text-decoration: none;
       font-family: sans-serif;
       color: $neutral-color01;
-      font-size: 32px;
+      @include font-M;
 
       @include mobile {
-        font-size: 32px;
+        @include font-M;
       }
     }
   }
@@ -72,20 +73,13 @@
   }
 
   &__title {
-    color: #2f2f2f;
-    font-size: 64px;
-    line-height: 72px;
+    color: $neutral-color01;
+    @include font-XL;
     font-weight: bold;
     max-width: 800px;
 
     @include tablet {
-      font-size: 80px;
-      line-height: 88px;
-    }
-
-    @include phablet {
-      font-size: 64px;
-      line-height: 72px;
+      @include font-XL;
     }
 
     @include mobile {
@@ -101,7 +95,7 @@
     gap: 24px;
 
     li {
-      font-size: 16px;
+      @include font-S;
       display: inline-flex;
     }
 
@@ -131,16 +125,14 @@
 
   &__item {
     &-title {
-      font-size: 80px;
-      line-height: 88px;
+      @include font-XL;
       font-weight: bold;
       margin-bottom: 16px;
       color: $main-color;
     }
 
     &-subtitle {
-      font-size: 24px;
-      line-height: 32px;
+      @include font-M;
       margin-bottom: 16px;
       color: $main-color;
 
@@ -158,69 +150,57 @@
 
   &__column {
     &:nth-child(1) {
-      grid-column: 1/7;
+      grid-column: 1 / 7;
+      grid-row: 1;
 
       @include tablet {
-        grid-column: 1/7;
+        grid-column: 1 / 7;
       }
-
       @include mobile {
-        grid-column: 1/7;
+        grid-column: 1 / 7;
       }
     }
 
     &:nth-child(2) {
-      grid-column: 6/8;
+      grid-column: 7 / 13;
+      grid-row: 1;
 
       @include tablet {
-        grid-column: 1/7;
+        grid-column: 1 / 7;
+        grid-row: 2;
       }
-
       @include mobile {
-        grid-column: 1/7;
+        grid-column: 1 / 7;
       }
     }
+  }
 
-    &__title {
-      font-size: 64px;
-      line-height: 72px;
-      font-weight: bold;
-      margin-bottom: 16px;
-      color: $main-color;
+  &__title {
+    @include font-L;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
 
-      @include mobile {
-        font-size: 48px;
-        line-height: 56px;
-      }
-    }
-
-    &__description {
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 40px;
-      color: $neutral-color01;
-    }
-
-    @include phablet {
-      grid-row: 2;
-    }
+  &__description {
+    @include font-M;
+    font-weight: 300;
   }
 }
 
 // WOT
 .wot {
-  color: #2f2f2f;
+  color: $neutral-color01;
 
   &__title {
     text-align: center;
-    font-size: 40px;
+    @include font-L;
     font-weight: bold;
     color: $neutral-color01;
   }
 }
 
-// GRID CONTENT
-.gridContent {
+// ARTWORKS GRID
+.artworksGrid {
   color: $neutral-color03;
 
   .wrapper {
@@ -302,19 +282,17 @@
 
   &__text {
     &-title {
-      font-size: 40px;
+      @include font-L;
       font-weight: bold;
       margin-bottom: 8px;
 
       @include tablet {
-        font-size: 24px;
-        line-height: 32px;
+        @include font-L;
       }
     }
 
     &-description {
-      font-size: 24px;
-      line-height: 32px;
+      @include font-L;
       margin: 0;
     }
 
@@ -344,17 +322,16 @@
   text-align: center;
   justify-content: center;
 
+  @include tablet {
+    grid-template-columns: 1fr;
+  }
   @include mobile {
     padding: 32px 48px;
   }
 
-  @include tablet {
-    grid-template-columns: 1fr;
-  }
-
   &__title {
     text-align: center;
-    font-size: 64px;
+    @include font-XL;
     margin-bottom: 32px;
     font-weight: bold;
 
@@ -362,29 +339,17 @@
       color: $neutral-color02;
     }
 
-    @include laptop {
-      font-size: 96px;
-      line-height: 104px;
-    }
-
     @include tablet {
-      font-size: 104px;
-      line-height: 88px;
-    }
-
-    @include phablet {
-      font-size: 64px;
-      line-height: 72px;
+      @include font-XL;
     }
 
     @include mobile {
-      font-size: 40px;
-      line-height: 48px;
+      @include font-XL;
     }
   }
   &__description {
     text-align: center;
-    font-size: 40px;
+    @include font-M;
     font-weight: normal;
     margin-bottom: 24px;
     color: $neutral-color01;
@@ -398,7 +363,6 @@
 .footer {
   background: $neutral-color01;
   padding: 30px 0;
-  font-family: "Play", sans-serif;
   text-align: center;
 
   .row {
@@ -406,7 +370,7 @@
     margin: 1% 0;
     padding: 0.6% 0;
     color: $neutral-color02;
-    font-size: 0.8em;
+    @include body;
 
     a {
       text-decoration: none;
@@ -428,7 +392,7 @@
     }
 
     a i {
-      font-size: 2em;
+      @include font-M;
       margin: 0 1%;
     }
   }
@@ -437,10 +401,10 @@
 // WORK LIST
 .workList {
   &__title {
-    font-size: 40px;
+    @include font-L;
     font-weight: bold;
     margin-bottom: 40px;
-    color: #00a06e;
+    color: $main-color;
   }
 
   &__item {
@@ -458,39 +422,35 @@
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
-      border-top: 1px solid lightgrey;
+      border-top: 1px solid $neutral-color04;
     }
 
     &-title {
-      font-size: 24px;
-      line-height: 32px;
+      @include font-M;
       margin: 0 auto;
       font-weight: bold;
       color: #3b3b3b;
 
       @include mobile {
-        font-size: 20px;
+        @include font-M;
         line-height: 28px;
       }
     }
 
     &-date {
-      font-size: 20px;
-      line-height: 28px;
+      @include font-M;
       margin-top: 16px;
-      color: #6b7280;
+      color: $neutral-color02;
 
       @include mobile {
-        font-size: 18px;
-        line-height: 26px;
+        @include font-M;
       }
     }
 
     &-description {
-      font-size: 18px;
+      @include body;
       font-weight: normal;
-      line-height: 32px;
-      color: #3b3b3b;
+      color: $neutral-color01;
     }
 
     &-tags {
@@ -524,7 +484,7 @@
 // GRID BRANDS
 .gridBrands {
   &__title {
-    font-size: 40px;
+    @include font-L;
     font-weight: bold;
     text-align: center;
     margin-bottom: 40px;
@@ -599,35 +559,36 @@
     margin-bottom: 16px;
     color: $neutral-color01;
   }
+
+  &__underline {
+    color: $main-color;
+  }
+
   &__title {
-    font-size: 64px;
-    line-height: 72px;
+    @include font-XL;
     font-weight: bold;
     margin-top: 32px;
     color: $neutral-color01;
 
-    @include tablet {
-      font-size: 64px;
-      line-height: 72px;
-      color: $neutral-color01;
-    }
+    // @include tablet {
+    //   font-size: 64px;
+    //   line-height: 72px;
+    //   color: $neutral-color01;
+    // }
 
     @include mobile {
-      font-size: 32px;
-      line-height: 40px;
+      @include font-L;
       color: $neutral-color01;
     }
   }
 
   &__description {
-    font-size: 28px;
-    line-height: 36px;
+    @include font-L;
     font-weight: 300;
     color: $neutral-color01;
 
     @include mobile {
-      font-size: 24px;
-      line-height: 32px;
+      @include font-M;
       color: $neutral-color01;
     }
   }
@@ -644,8 +605,7 @@
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 24px;
+    @include body;
   }
 
   &__date {
@@ -742,6 +702,7 @@
       font-weight: bold;
       color: $neutral-color01;
     }
+
     &-subtitle {
       font-size: 16px;
       color: $neutral-color01;

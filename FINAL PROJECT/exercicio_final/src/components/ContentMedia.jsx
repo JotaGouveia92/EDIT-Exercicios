@@ -9,7 +9,8 @@ export default function ContentMedia() {
         <div className="wrapper grid">
           <div className="contentMedia__column">
             <h2 className="contentMedia__title">
-              Building impactful digital experiences!
+              Building meaningful and impactful digital experiences that empower
+              people in the digital world.
             </h2>
           </div>
           <div className="contentMedia__column">

@@ -7,6 +7,7 @@ import InfoNumbers from "../components/InfoNumbers";
 import Nav from "../components/nav";
 import Wot from "../components/Wot";
 import Path from "../components/Path";
+import ContentMedia from "../components/ContentMedia";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Nav />
       <Header />
       <InfoNumbers />
+      <ContentMedia />
       <Wot />
       <ArtworksGrid />
       <Path />

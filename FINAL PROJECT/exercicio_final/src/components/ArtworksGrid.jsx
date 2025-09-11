@@ -44,12 +44,12 @@ export default function ArtworksGrid() {
   if (loading) return <p>Carregando...</p>;
 
   return (
-    <div className="gridContent">
+    <div className="artworksGrid">
       <div className="wrapper">
-        <div className="gridContent__container">
+        <div className="artworksGrid__container">
           {artworks.map((art) => (
-            <div className="gridContent__column" key={art.id}>
-              <div className="gridContent__card">
+            <div className="artworksGridt__column" key={art.id}>
+              <div className="artworksGrid__card">
                 <figure>
                   <img
                     src={
@@ -61,21 +61,21 @@ export default function ArtworksGrid() {
                   />
                 </figure>
 
-                <div className="gridContent__content">
-                  <div className="gridContent__text">
-                    <h2 className="gridContent__text-title">{art.title}</h2>
-                    <p className="gridContent__text-description">
+                <div className="artworksGrid__content">
+                  <div className="artworksGrid__text">
+                    <h2 className="artworksGrid__text-title">{art.title}</h2>
+                    <p className="artworksGridt__text-description">
                       {art.artist_display || "Artista desconhecido"}
                     </p>
                   </div>
-                  <div className="gridContent__text-icon">
+                  <div className="artworksGrid__text-icon">
                     <img
                       src="/images/arrow-up-right.svg"
                       alt="Arrow Up Right Icon"
                     />
                   </div>
                 </div>
-                <div className="gridContent__tags">
+                <div className="artworksGrid__tags">
                   <span className="tag-02">Arte</span>
                   <span className="tag-02">Cats</span>
                 </div>

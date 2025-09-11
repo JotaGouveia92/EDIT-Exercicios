@@ -22,20 +22,20 @@
 }
 
 .tag-03 {
-  color: #3b3b3b;
+  color: $neutral-color01;
   font-size: 16px;
   border-radius: 100px;
 }
 
 .tag-04 {
-  color: #3b3b3b;
+  color: $neutral-color01;
   font-size: 20px;
   border-radius: 100px;
 }
 
 .tag-05 {
-  border: 1.5px solid #00a06e;
-  color: #00a06e;
+  border: 1.5px solid $main-color;
+  color: $main-color;
   padding: 16px 32px;
   font-size: 16px;
   border-radius: 100px;
@@ -43,8 +43,8 @@
 
 // Buttons
 .cta-01 {
-  background-color: #3b3b3b;
-  color: white;
+  background-color: $neutral-color01;
+  color: $neutral-color03;
   width: fit-content;
   padding: 24px 56px;
   align-items: center;
@@ -57,9 +57,9 @@
 }
 
 .cta-02 {
-  background-color: #3b3b3b;
+  background-color: $neutral-color01;
   width: fit-content;
-  color: white;
+  color: $neutral-color03;
   padding: 24px 40px;
   align-items: center;
   text-decoration: none;
@@ -71,8 +71,8 @@
 
 .cta-03 {
   width: fit-content;
-  background-color: #00a06e;
-  color: white;
+  background-color: $main-color;
+  color: $neutral-color03;
   padding: 24px 40px;
   display: inline-flex;
   align-items: center;
@@ -85,8 +85,8 @@
 
 .cta-04 {
   width: fit-content;
-  background-color: #00a06e;
-  color: white;
+  background-color: $main-color;
+  color: $neutral-color03;
   padding: 24px 56px;
   display: inline-flex;
   align-items: center;
