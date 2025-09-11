@@ -14,7 +14,7 @@ export default function Header() {
             <CtaLink
               text="Let's talk"
               to="/contactForm"
-              variant="cta-03"
+              variant="cta-01"
               icon="fa-arrow-right"
             />
 

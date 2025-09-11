@@ -4,7 +4,9 @@ export default function SimpleHeader() {
       <section className="simpleHeader">
         <div className="wrapper">
           <div className="simpleHeader__content">
-            <p className="simpleHeader__caption">McDonald's</p>
+            <p className="simpleHeader__caption">
+              <strong>McDonald's</strong>
+            </p>
             <h3 className="simpleHeader__title"> Mood de Mac </h3>
             <p className="simpleHeader__text">
               In the fast-paced, visually overwhelming world we live in, it's no
