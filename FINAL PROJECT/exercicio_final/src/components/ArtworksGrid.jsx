@@ -76,8 +76,8 @@ export default function ArtworksGrid() {
                   </div>
                 </div>
                 <div className="artworksGrid__tags">
-                  <span className="tag-02">Arte</span>
-                  <span className="tag-02">Cats</span>
+                  <span className="tag-03">Arte</span>
+                  <span className="tag-03">Cats</span>
                 </div>
               </div>
             </div>

@@ -12,7 +12,7 @@ export default function CtaBlock() {
           <CtaLink
             text="Let's talk"
             to="/contactForm"
-            variant="cta-03"
+            variant="cta-01"
             icon="fa-arrow-right"
           />
         </div>

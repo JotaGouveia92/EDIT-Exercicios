@@ -6,38 +6,40 @@
 
 // TAGS
 .tag-01 {
-  border: 1.5px solid #67686a;
-  color: #67686a;
+  border: 1.5px solid $neutral-color03;
+  color: $neutral-color03;
   padding: 16px 24px;
   font-size: 18px;
   border-radius: 100px;
 }
 
 .tag-02 {
-  border: 1.5px solid #ffff;
-  color: white;
+  border: 1.5px solid $neutral-color04;
+  color: $neutral-color02;
   padding: 16px 24px;
-  font-size: 18px;
+  @include body;
   border-radius: 100px;
 }
 
 .tag-03 {
-  color: $neutral-color01;
-  font-size: 18px;
+  color: $neutral-color05;
+  @include body;
   border-radius: 100px;
+  border: 1px solid $neutral-color05;
+  padding: 8px 16px;
 }
 
 .tag-04 {
   color: $neutral-color01;
-  font-size: 18px;
+  @include body;
   border-radius: 100px;
 }
 
 .tag-05 {
   border: 1.5px solid $main-color;
   color: $main-color;
-  padding: 16px 24px;
-  font-size: 18px;
+  padding: 8px 16px;
+  @include body;
   border-radius: 100px;
 }
 
@@ -46,7 +48,7 @@
 .cta-01 {
   width: fit-content;
   background-color: $main-color;
-  color: $neutral-color03;
+  color: $neutral-color05;
   padding: 16px 24px;
   display: inline-flex;
   align-items: center;
@@ -55,6 +57,13 @@
   border-radius: 100px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   gap: 18px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+    background-color: $neutral-color01;
+    color: $neutral-color05;
+  }
 }
 
 .cta-02 {
@@ -69,7 +78,13 @@
   font-size: 18px;
   gap: 18px;
   border-radius: 100px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+
+  &:hover {
+    text-decoration: none;
+    border: 1px solid $neutral-color01;
+    color: $neutral-color01;
+  }
 }
 
 .cta-03 {

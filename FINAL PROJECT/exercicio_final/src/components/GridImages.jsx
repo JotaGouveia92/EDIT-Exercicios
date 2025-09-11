@@ -6,7 +6,7 @@ export default function GridImages() {
           <img src="/images/mcdonalds_campaign_03.jpg" alt="imagens projecto" />
         </div>
         <div className="grid-images__item">
-          <img src="/images/mcdonalds_campaign_02.jpg" alt="imagens projecto" />
+          <img src="/images/mcdonalds_campaign_04.jpg" alt="imagens projecto" />
         </div>
         <div className="grid-images__item">
           <img src="/images/mcdonalds_campaign_01.jpg" alt="imagens projecto" />

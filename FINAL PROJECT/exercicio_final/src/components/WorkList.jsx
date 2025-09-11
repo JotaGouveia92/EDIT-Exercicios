@@ -1,7 +1,7 @@
 export default function WorkList() {
   return (
     <div>
-      <div className="workList" data-margin-top="l" data-margin-bottom="m">
+      <div className="workList" data-margin-top="m" data-margin-bottom="m">
         <div className="wrapper">
           <h2 className="workList__title">My Experience</h2>
           <ul className="workList__list">

@@ -1,33 +1,16 @@
-export default function InfoNumbers() {
+export default function InfoNumbers({ items }) {
   return (
-    <div>
-      <section
-        className="infoNumbers"
-        data-margin-top="l"
-        data-margin-bottom="s"
-      >
-        <div className="wrapper">
-          <div className="infoNumbers__content">
-            <div className="infoNumbers__item">
-              <h1 className="infoNumbers__item-title">+7</h1>
-              <p className="infoNumbers__item-subtitle">Years of Experience</p>
+    <section className="infoNumbers" data-margin-top="m">
+      <div className="wrapper">
+        <div className="infoNumbers__content">
+          {items.map((item, index) => (
+            <div key={index} className="infoNumbers__item">
+              <h2 className="infoNumbers__item-title">{item.title}</h2>
+              <p className="infoNumbers__item-subtitle">{item.subtitle}</p>
             </div>
-            <div className="infoNumbers__item">
-              <h1 className="infoNumbers__item-title">+10</h1>
-              <p className="infoNumbers__item-subtitle">Happy Clients</p>
-            </div>
-            <div className="infoNumbers__item">
-              <h1 className="infoNumbers__item-title">+20</h1>
-              <p className="infoNumbers__item-subtitle">Launched Campaigns</p>
-            </div>
-            <div className="infoNumbers__item">
-              <h1 className="infoNumbers__item-title">+15</h1>
-              <p className="infoNumbers__item-subtitle">Design Materials</p>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
-      ;
-    </div>
+      </div>
+    </section>
   );
 }

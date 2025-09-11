@@ -13,21 +13,23 @@ export default function Path() {
           <li className="path__item">
             <div className="path__item-info">
               <h4 className="path__item-title">McDonald's</h4>
-              <p className="path__item-date">May 5, 2024</p>
+              <p className="path__item-date">June 11, 2024</p>
               <div className="path__item-tags">
                 <span className="tag-01">UX / UI</span>
                 <span className="tag-01">Branding</span>
               </div>
             </div>
             <p className="path__item-description">
-              Far far away, behind the world mountains, far from the countries
-              Vokalia and Consonantia, theresFar far away, behind the world
-              mountains, far from the countries Vokalia.
+              To fight menu fatigue among Gen Z, McDonald’s launched “Mood for
+              Mac,” an AI-powered app offering meal suggestions based on
+              real-time emotions. Using facial recognition, it created a fun,
+              mood-driven ordering experience. Personalized rewards and tech
+              engagement boosted excitement and app usage.
             </p>
             <CtaLink
-              text="View Project"
+              text="See project"
               to="/contactForm"
-              variant="cta-03"
+              variant="cta-01"
               icon="fa-arrow-right"
             />
           </li>
@@ -42,14 +44,16 @@ export default function Path() {
               </div>
             </div>
             <p className="path__item-description">
-              Far far away, behind the world mountains, far from the countries
-              Vokalia and Consonantia, theresFar far away, behind the world
-              mountains, far from the countries Vokalia.
+              The Santa Casa quiz campaign combined fun and education on social
+              responsibility and its supported causes. With challenging
+              questions and rewarding prizes, it boosted audience engagement.
+              The initiative reinforced Santa Casa’s role in promoting positive
+              community impact.
             </p>
             <CtaLink
-              text="View Project"
+              text="See project"
               to="/contactForm"
-              variant="cta-03"
+              variant="cta-01"
               icon="fa-arrow-right"
             />
           </li>
@@ -57,21 +61,23 @@ export default function Path() {
           <li className="path__item">
             <div className="path__item-info">
               <h4 className="path__item-title">McDonalds</h4>
-              <p className="path__item-date">May 5, 2024</p>
+              <p className="path__item-date">July 16, 2024</p>
               <div className="path__item-tags">
                 <span className="tag-01">UX / UI</span>
                 <span className="tag-01">Branding</span>
               </div>
             </div>
             <p className="path__item-description">
-              Far far away, behind the world mountains, far from the countries
-              Vokalia and Consonantia, theresFar far away, behind the world
-              mountains, far from the countries Vokalia.
+              The Big Arch campaign reimagined McDonald’s iconic golden arches
+              as dynamic displays celebrating community and connection. Using
+              innovative design and storytelling, it refreshed the brand’s
+              presence. The campaign engaged audiences with a memorable visual
+              experience.
             </p>
             <CtaLink
-              text="View Project"
+              text="See project"
               to="/contactForm"
-              variant="cta-03"
+              variant="cta-01"
               icon="fa-arrow-right"
             />
           </li>

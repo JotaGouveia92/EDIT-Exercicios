@@ -14,7 +14,14 @@ export default function Home() {
     <>
       <Nav />
       <Header />
-      <InfoNumbers />
+      <InfoNumbers
+        items={[
+          { title: "+8", subtitle: "Years of Experience" },
+          { title: "+10", subtitle: "Happy Clients" },
+          { title: "+20", subtitle: "Launched Campaigns" },
+          { title: "+30", subtitle: "Design Materials" },
+        ]}
+      />
       <ContentMedia />
       <Wot />
       <ArtworksGrid />

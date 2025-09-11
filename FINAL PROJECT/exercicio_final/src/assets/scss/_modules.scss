@@ -44,6 +44,11 @@
       text-decoration: none;
       font-family: sans-serif;
       color: $neutral-color01;
+
+      &:hover {
+        text-decoration: none;
+        color: $main-color;
+      }
       @include font-M;
 
       @include mobile {
@@ -105,6 +110,12 @@
     a {
       font-weight: bold;
       text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+        color: $main-color;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+      }
     }
   }
 }
@@ -219,7 +230,7 @@
 
 // ARTWORKS GRID
 .artworksGrid {
-  color: $neutral-color03;
+  color: $neutral-color05;
 
   .wrapper {
     max-width: 100%;
@@ -424,8 +435,8 @@
   &__title {
     @include font-L;
     font-weight: bold;
-    margin-bottom: 40px;
     color: $main-color;
+    margin-bottom: 40px;
   }
 
   &__item {
