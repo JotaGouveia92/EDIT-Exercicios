@@ -1,3 +1,5 @@
+import CtaLink from "./CtaLink";
+
 export default function Path() {
   return (
     <div
@@ -22,9 +24,12 @@ export default function Path() {
               Vokalia and Consonantia, theresFar far away, behind the world
               mountains, far from the countries Vokalia.
             </p>
-            <a href="" className="cta-03">
-              View Project
-            </a>
+            <CtaLink
+              text="View Project"
+              to="/contactForm"
+              variant="cta-03"
+              icon="fa-arrow-right"
+            />
           </li>
 
           <li className="path__item">
@@ -41,9 +46,12 @@ export default function Path() {
               Vokalia and Consonantia, theresFar far away, behind the world
               mountains, far from the countries Vokalia.
             </p>
-            <a href="" className="cta-03">
-              View Project
-            </a>
+            <CtaLink
+              text="View Project"
+              to="/contactForm"
+              variant="cta-03"
+              icon="fa-arrow-right"
+            />
           </li>
 
           <li className="path__item">
@@ -60,9 +68,12 @@ export default function Path() {
               Vokalia and Consonantia, theresFar far away, behind the world
               mountains, far from the countries Vokalia.
             </p>
-            <a href="" className="cta-03">
-              View Project
-            </a>
+            <CtaLink
+              text="View Project"
+              to="/contactForm"
+              variant="cta-03"
+              icon="fa-arrow-right"
+            />
           </li>
         </ul>
       </div>

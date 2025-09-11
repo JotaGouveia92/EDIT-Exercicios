@@ -3,8 +3,8 @@ export default function ContentMedia() {
     <div>
       <section
         className="contentMedia"
-        data-margin-top="l"
-        data-margin-bottom="l"
+        data-margin-top="m"
+        data-margin-bottom="m"
       >
         <div className="wrapper grid">
           <div className="contentMedia__column">

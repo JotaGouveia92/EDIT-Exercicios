@@ -13,9 +13,7 @@ export default function AboutMe() {
         tag="Projects"
         title="Innovative designer for a "
         highlight="digital age"
-        description="With over +8 years of experience, I specialize in creating intuitive
-            and user-centered interfaces for a wide range of digital products
-            and experiences. Far far away, behind the world mountains, far from"
+        description="I bring over 8 years of experience designing user-focused digital interfaces that are both intuitive and impactful — helping brands deliver seamless, engaging experiences."
       />
       <WorkList />
       <Brands />
