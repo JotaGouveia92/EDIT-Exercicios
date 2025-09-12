@@ -7,7 +7,7 @@ export default function WorkList() {
           <ul className="workList__list">
             <li className="workList__item">
               <div className="workList__item-info">
-                <h4 className="workList__item-title">Product Designer</h4>
+                <h4 className="workList__item-title">UX UI Designer</h4>
                 <p className="workList__item-date">FullSix Portugal</p>
               </div>
               <div className="workList__item-tags">
