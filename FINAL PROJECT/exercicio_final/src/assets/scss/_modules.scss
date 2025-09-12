@@ -42,14 +42,15 @@
 
     &-item {
       text-decoration: none;
-      font-family: sans-serif;
       color: $neutral-color01;
+      @include font-M;
 
       &:hover {
         text-decoration: none;
         color: $main-color;
       }
-      @include font-M;
+
+      transition: color 0.3s ease;
 
       @include mobile {
         @include font-M;
