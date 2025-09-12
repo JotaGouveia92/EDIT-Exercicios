@@ -371,6 +371,7 @@
     @include font-XL;
     margin-bottom: 32px;
     font-weight: bold;
+    color: $neutral-color01;
 
     mark {
       color: $neutral-color02;
@@ -550,7 +551,7 @@
     opacity: 1;
 
     &:hover {
-      opacity: 0.2;
+      opacity: 0.4;
     }
   }
 }

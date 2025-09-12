@@ -4,75 +4,75 @@ export default function Brands() {
       <section className="gridBrands">
         <div className="gridBrands__title">My Clients</div>
         <div className="gridBrands__content">
-          <figure className="gridBrands-img">
-            <a
-              href="https://www.mcdonalds.pt/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://www.mcdonalds.pt/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/01.png" alt="McDonald's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
 
-          <figure className="gridBrands-img">
-            <a
-              href="https://www.jogossantacasa.pt/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://www.jogossantacasa.pt/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/02.png" alt="Jogos Santa Casa's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
 
-          <figure className="gridBrands-img">
-            <a
-              href="https://www.milka.com/es/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://www.milka.com/es/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/03.png" alt="Milka's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
 
-          <figure className="gridBrands-img">
-            <a
-              href="https://www.nos.pt/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://www.nos.pt/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/04.png" alt="NOS's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
 
-          <figure className="gridBrands-img">
-            <a
-              href="https://www.ruffles.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://www.ruffles.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/05.png" alt="Ruffles's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
 
-          <figure className="gridBrands-img">
-            <a
-              href="https://www.pbs.up.pt"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://www.pbs.up.pt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/06.png" alt="Porto Business School's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
 
-          <figure className="gridBrands-img">
-            <a
-              href="https://mimosa.pt/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <a
+            href="https://mimosa.pt/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <figure className="gridBrands__img">
               <img src="/images/07.png" alt="Mimosa's logo" />
-            </a>
-          </figure>
+            </figure>
+          </a>
         </div>
       </section>
     </div>
