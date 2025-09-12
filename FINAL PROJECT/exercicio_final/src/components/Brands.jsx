@@ -10,7 +10,7 @@ export default function Brands() {
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/01.png" alt="McDonald's logo" />
+              <img src="/images/mcdonalds_logo.svg" alt="McDonald's logo" />
             </figure>
           </a>
 
@@ -20,7 +20,10 @@ export default function Brands() {
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/02.png" alt="Jogos Santa Casa's logo" />
+              <img
+                src="/images/jogosSantaCasa_logo.svg"
+                alt="Jogos Santa Casa's logo"
+              />
             </figure>
           </a>
 
@@ -30,7 +33,7 @@ export default function Brands() {
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/03.png" alt="Milka's logo" />
+              <img src="/images/milka_logo.svg" alt="Milka's logo" />
             </figure>
           </a>
 
@@ -40,17 +43,17 @@ export default function Brands() {
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/04.png" alt="NOS's logo" />
+              <img src="/images/nos_logo.svg" alt="NOS's logo" />
             </figure>
           </a>
 
           <a
-            href="https://www.ruffles.com/"
+            href="https://www.worten.pt/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/05.png" alt="Ruffles's logo" />
+              <img src="/images/worten_logo.svg" alt="Worten's logo" />
             </figure>
           </a>
 
@@ -60,7 +63,10 @@ export default function Brands() {
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/06.png" alt="Porto Business School's logo" />
+              <img
+                src="/images/pbs_logo.svg"
+                alt="Porto Business School's logo"
+              />
             </figure>
           </a>
 
@@ -70,7 +76,7 @@ export default function Brands() {
             rel="noopener noreferrer"
           >
             <figure className="gridBrands__img">
-              <img src="/images/07.png" alt="Mimosa's logo" />
+              <img src="/images/mimosa_logo.svg" alt="Mimosa's logo" />
             </figure>
           </a>
         </div>
