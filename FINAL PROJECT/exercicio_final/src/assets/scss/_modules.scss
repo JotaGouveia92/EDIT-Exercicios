@@ -831,7 +831,7 @@
   &__field {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
   }
 
   @include mobile {
@@ -840,7 +840,7 @@
 
   label {
     font-weight: 600;
-    color: #000;
+    color: $neutral-color01;
     margin-bottom: 8px;
     font-size: 16px;
   }
@@ -848,19 +848,20 @@
   input,
   textarea {
     border: none;
-    border-bottom: 1px solid #ccc;
-    font-size: 1rem;
-    color: #000;
+    border-bottom: 1px solid $neutral-color04;
+    font-size: 16px;
+    color: $neutral-color01;
     background: transparent;
     transition: border-color 0.3s;
 
     &::placeholder {
-      color: #a0a0a0;
+      color: $neutral-color04;
+      font-family: "Inter Tight";
     }
 
     &:focus {
       outline: none;
-      border-bottom-color: #000;
+      border-bottom-color: $neutral-color01;
     }
   }
 
@@ -872,17 +873,17 @@
   .submit {
     margin-top: 24px;
     padding: 16px 24px;
-    background-color: #000;
-    color: #fff;
+    background-color: $neutral-color01;
+    color: $neutral-color05;
     border: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
     align-self: flex-start;
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: #333;
+      background-color: $neutral-color01;
     }
   }
 }

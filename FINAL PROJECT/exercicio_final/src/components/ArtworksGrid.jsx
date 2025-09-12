@@ -72,7 +72,7 @@ export default function ArtworksGrid() {
                   <div className="artworksGrid__text-icon">
                     <Link to="/work" className="artworksGrid__text-icon">
                       <img
-                        src="/images/arrow-up-right.svg"
+                        src="/images/icons/arrow-up-right.svg"
                         alt="Arrow Up Right Icon"
                       />
                     </Link>

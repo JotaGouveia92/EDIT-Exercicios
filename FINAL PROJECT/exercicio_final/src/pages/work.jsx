@@ -1,11 +1,11 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import Brands from "../components/brands";
 import SimpleHeader from "../components/SimpleHeader";
 import ContentText from "../components/ContentText";
 import GridImages from "../components/GridImages";
 import SimpleMedia from "../components/SimpleMedia";
 import InfoNumbers from "../components/InfoNumbers";
+import Brands from "../components/Brands";
 
 export default function Work() {
   return (
@@ -20,7 +20,7 @@ export default function Work() {
         date="2024"
       />
       <SimpleMedia
-        image="images/mcdonalds_campaign.jpg"
+        image="images/artwork/mcdonalds_campaign.jpg"
         alt="campanha mcdonalds"
       />
       <InfoNumbers
