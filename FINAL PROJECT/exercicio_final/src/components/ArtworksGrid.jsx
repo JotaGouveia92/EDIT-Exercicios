@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function ArtworksGrid() {
   const [artworks, setArtworks] = useState([]);
@@ -69,10 +70,12 @@ export default function ArtworksGrid() {
                     </p>
                   </div>
                   <div className="artworksGrid__text-icon">
-                    <img
-                      src="/images/arrow-up-right.svg"
-                      alt="Arrow Up Right Icon"
-                    />
+                    <Link to="/work" className="artworksGrid__text-icon">
+                      <img
+                        src="/images/arrow-up-right.svg"
+                        alt="Arrow Up Right Icon"
+                      />
+                    </Link>
                   </div>
                 </div>
                 <div className="artworksGrid__tags">
