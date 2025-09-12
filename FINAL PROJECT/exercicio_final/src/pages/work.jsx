@@ -11,7 +11,14 @@ export default function Work() {
   return (
     <div>
       <Nav />
-      <SimpleHeader />
+      <SimpleHeader
+        label="McDonald's"
+        title=" Emotional Campaign - Mood de Mac"
+        text="In the fast-paced, visually overwhelming world we live in, it's no
+              surprise that minimalism has become a powerful trend in the realm
+              of visual design."
+        date="2024"
+      />
       <SimpleMedia
         image="images/mcdonalds_campaign.jpg"
         alt="campanha mcdonalds"
