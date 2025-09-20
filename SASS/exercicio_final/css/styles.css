@@ -634,6 +634,7 @@ input::-ms-reveal {
   .action {
     flex-direction: column;
     text-align: center;
+    margin: 0rem 2rem;
     gap: 1.5rem;
   }
   .action__title {
