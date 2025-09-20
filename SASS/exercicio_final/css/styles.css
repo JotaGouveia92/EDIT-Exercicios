@@ -241,7 +241,7 @@ input::-ms-reveal {
   gap: 2rem;
 }
 .nav__logo {
-  height: 3rem;
+  height: 5rem;
 }
 .nav__menu {
   display: flex;
@@ -383,10 +383,9 @@ input::-ms-reveal {
 
 .solutions {
   position: relative;
-  padding: 5rem 2rem;
   text-align: center;
-  background-color: #ffffff;
   font-family: "Inter Tight", sans-serif;
+  padding: 4rem 0rem;
 }
 .solutions__title {
   font-size: 2rem;
@@ -404,7 +403,6 @@ input::-ms-reveal {
 .solutions__content {
   position: relative;
   overflow: hidden;
-  border-radius: 1rem;
   padding: 4rem 2rem;
 }
 .solutions__content::before {

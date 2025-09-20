@@ -58,7 +58,7 @@
   }
 
   &__logo {
-    height: 3rem;
+    height: 5rem;
   }
 
   &__menu {
@@ -224,10 +224,10 @@
 
 .solutions {
   position: relative;
-  padding: 5rem 2rem;
   text-align: center;
-  background-color: $neutral-color-04;
+  // background-color: $neutral-color-04;
   font-family: "Inter Tight", sans-serif;
+  padding: 4rem 0rem;
 
   &__title {
     font-size: 2rem;
@@ -247,7 +247,6 @@
   &__content {
     position: relative;
     overflow: hidden;
-    border-radius: 1rem;
     padding: 4rem 2rem;
 
     &::before {
