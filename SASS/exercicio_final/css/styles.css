@@ -209,14 +209,16 @@ input::-ms-reveal {
   border: none;
 }
 .button--primary:hover {
-  background-color: #338cf4;
+  background-color: #0064da;
+  color: #ffffff;
 }
 .button--dark {
   background-color: #191919;
   color: #ffffff;
 }
 .button--dark:hover {
-  background-color: #fffafa;
+  background-color: #c4c4c4;
+  color: #191919;
 }
 .button--circle {
   background-color: #338cf4;
@@ -225,7 +227,7 @@ input::-ms-reveal {
   border-radius: 9999px;
 }
 .button--circle:hover {
-  background-color: #338cf4;
+  background-color: #0064da;
 }
 
 .nav {
@@ -343,7 +345,7 @@ input::-ms-reveal {
 }
 
 .features {
-  background-color: #fbfbfb;
+  background-color: #f1f1f1;
   text-align: center;
   padding: 4rem 2rem;
   font-family: "Inter Tight", sans-serif;
@@ -520,7 +522,7 @@ input::-ms-reveal {
 .info-cards__tabs-item {
   padding: 0.5rem 1.5rem;
   border-radius: 2rem;
-  background-color: #fbfbfb;
+  background-color: #f1f1f1;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
@@ -571,7 +573,7 @@ input::-ms-reveal {
   padding: 0.75rem 1rem;
   border-radius: 2rem;
   font-size: 0.85rem;
-  background-color: #fbfbfb;
+  background-color: #f1f1f1;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -657,7 +659,7 @@ input::-ms-reveal {
   transition: all 0.3s ease;
 }
 .cta-block__btn:hover {
-  background-color: #fbfbfb;
+  background-color: #c4c4c4;
 }
 @media (max-width: 768px) {
   .cta-block {
@@ -677,7 +679,7 @@ input::-ms-reveal {
   gap: 3rem;
   padding: 3rem 2rem;
   background: #ffffff;
-  border-top: 1px solid #fffafa;
+  border-top: 1px solid #f1f1f1;
   font-family: "Inter Tight", sans-serif;
 }
 .footer__column {

@@ -17,7 +17,8 @@
     border: none;
 
     &:hover {
-      background-color: $main-color-01;
+      background-color: $main-color-02;
+      color: $neutral-color-04;
     }
   }
 
@@ -26,7 +27,8 @@
     color: $neutral-color-04;
 
     &:hover {
-      background-color: $neutral-color-03;
+      background-color: $neutral-color-02;
+      color: $neutral-color-01;
     }
   }
 
@@ -37,7 +39,7 @@
     border-radius: 9999px;
 
     &:hover {
-      background-color: $main-color-01;
+      background-color: $main-color-02;
     }
   }
 }
@@ -176,7 +178,7 @@
 }
 
 .features {
-  background-color: $neutral-color-02;
+  background-color: $neutral-color-03;
   text-align: center;
   padding: 4rem 2rem;
   font-family: "Inter Tight", sans-serif;
@@ -373,7 +375,7 @@
     &-item {
       padding: 0.5rem 1.5rem;
       border-radius: 2rem;
-      background-color: $neutral-color-02;
+      background-color: $neutral-color-03;
       font-size: 1rem;
       font-weight: 500;
       cursor: pointer;
@@ -430,7 +432,7 @@
         padding: 0.75rem 1rem;
         border-radius: 2rem;
         font-size: 0.85rem;
-        background-color: $neutral-color-02;
+        background-color: $neutral-color-03;
         cursor: pointer;
         transition: background-color 0.3s ease;
 
