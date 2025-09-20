@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/main.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,175 +16,303 @@
   </head>
   <body>
     <nav class="nav">
-      <div class="nav-right">
-        <img src="./assets/images/logo.webp" alt="logo" />
-        <ul class="nav-right-menu">
-          <li>
-            <a href="./index.html">Pricing</a>
+      <div class="nav__brand">
+        <img src="./assets/images/logo.webp" alt="logo" class="nav__logo" />
+        <ul class="nav__menu">
+          <li class="nav__menu-item">
+            <a href="./index.html" class="nav__menu-link">Pricing</a>
           </li>
-          <li>
-            <a href="./index.html">About</a>
+          <li class="nav__menu-item">
+            <a href="./index.html" class="nav__menu-link">About</a>
           </li>
-          <li>
-            <a href="./index.html">Tutorials</a>
+          <li class="nav__menu-item">
+            <a href="./index.html" class="nav__menu-link">Tutorials</a>
           </li>
         </ul>
       </div>
-      <ul class="nav-buttons">
-        <li>
-          <a href="./index.html" class="btn btn-white">Sign In</a>
+      <ul class="nav__actions">
+        <li class="nav__actions-item">
+          <a href="./index.html" class="button button--white">Sign In</a>
         </li>
-        <li>
-          <a href="./index.html" class="btn">Sign Up</a>
+        <li class="nav__actions-item">
+          <a href="./index.html" class="button">Sign Up</a>
         </li>
       </ul>
     </nav>
 
-    <section class="hero text-center">
-      <h1>Make your website wonderful</h1>
-      <p class="text">
+    <section class="hero">
+      <h1 class="hero__title">Make your website wonderful</h1>
+      <p class="hero__text">
         Our landing page template works on all devices, so you only have to set
         it up once, and get beautiful results forever.
       </p>
-      <div class="hero-buttons">
-        <a href="./index.html" class="btn">Set a free trial</a>
-        <a href="./index.html" class="btn">Learn More</a>
+      <div class="hero__actions">
+        <a href="./index.html" class="button button--primary"
+          >Set a free trial</a
+        >
+        <a href="./index.html" class="button button--dark">Learn More</a>
       </div>
-      <div class="hero-video">
+      <div class="hero__video">
         <video autoplay loop>
           <source src="./assets/images/video.mp4" type="video/mp4" />
         </video>
-        <a href="./index.html" class="btn">Watch more</a>
+        <a href="./index.html" class="button button--circle">Watch more</a>
       </div>
     </section>
 
-    <section class="heroImage text-center">
-      <div class="heroImage-absolute">
-        <hr />
-        <h2>How Simple works</h2>
-        <p class="text">
+    <section class="features">
+      <div class="features__content">
+        <hr class="features__divider" />
+        <h2 class="features__title">How Simple works</h2>
+        <p class="features__text">
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.
         </p>
-        <img src="./assets/images/hero-image.png" alt="hero image" />
+        <img
+          src="./assets/images/hero-image.png"
+          alt="hero image"
+          class="features__image"
+        />
       </div>
     </section>
-    <section class="solutions text-center">
-      <h2>Explore the solutions</h2>
-      <p class="text">
+
+    <section class="solutions">
+      <h2 class="solutions__title">Explore the solutions</h2>
+      <p class="solutions__text">
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
         dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.
       </p>
-      <div class="solutions-section">
-        <video autoplay loop>
+
+      <div class="solutions__content">
+        <video class="solutions__video" autoplay loop muted>
           <source src="./assets/background.mp4" type="video/mp4" />
         </video>
-        <div class="solutions-section-cards">
-          <div class="solutions-section-cards-card">
-            <div class="circle"></div>
-            <h5>Headless CMS</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="solutions__cards">
+          <div class="solutions__card">
+            <div class="solutions__icon"></div>
+            <h5 class="solutions__card-title">Headless CMS</h5>
+            <p class="solutions__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
-          <div class="solutions-section-cards-card">
-            <div class="circle"></div>
-            <h5>Headless CMS</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <div class="solutions__card">
+            <div class="solutions__icon"></div>
+            <h5 class="solutions__card-title">Headless CMS</h5>
+            <p class="solutions__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
-          <div class="solutions-section-cards-card">
-            <div class="circle"></div>
-            <h5>Headless CMS</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <div class="solutions__card">
+            <div class="solutions__icon"></div>
+            <h5 class="solutions__card-title">Headless CMS</h5>
+            <p class="solutions__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
-          <div class="solutions-section-cards-card">
-            <div class="circle"></div>
-            <h5>Headless CMS</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <div class="solutions__card">
+            <div class="solutions__icon"></div>
+            <h5 class="solutions__card-title">Headless CMS</h5>
+            <p class="solutions__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
-          <div class="solutions-section-cards-card">
-            <div class="circle"></div>
-            <h5>Headless CMS</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <div class="solutions__card">
+            <div class="solutions__icon"></div>
+            <h5 class="solutions__card-title">Headless CMS</h5>
+            <p class="solutions__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
-          <div class="solutions-section-cards-card">
-            <div class="circle"></div>
-            <h5>Headless CMS</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <div class="solutions__card">
+            <div class="solutions__icon"></div>
+            <h5 class="solutions__card-title">Headless CMS</h5>
+            <p class="solutions__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section-cards">
-      <h2 class="text-center">The most innovative businesses choose Simple</h2>
-      <div class="tabs">
-        <div class="tab tab-1">Development</div>
-        <div class="tab tab-2">Blockchain</div>
-        <div class="tab tab-3">NextJS</div>
-        <div class="tab tab-4">ReactJS</div>
+      <h2 class="section-cards__title text-center">
+        The most innovative businesses choose Simple
+      </h2>
+
+      <!-- Tabs superiores -->
+      <div class="section-cards__tabs">
+        <div class="section-cards__tabs-item section-cards__tabs-item--active">
+          Development
+        </div>
+        <div class="section-cards__tabs-item">Blockchain</div>
+        <div class="section-cards__tabs-item">NextJS</div>
+        <div class="section-cards__tabs-item">ReactJS</div>
       </div>
-      <div class="cards">
-        <div class="card">
-          <img src="./assets/images/pc.jpg" alt="pc" />
-          <div class="tabs">
-            <div class="tab tab-1">Case Studies</div>
-            <div class="tab tab-2">Blockchain</div>
+
+      <!-- Grid de cards -->
+      <div class="section-cards__list">
+        <div class="section-cards__card">
+          <img
+            src="./assets/images/pc.jpg"
+            alt="pc"
+            class="section-cards__card-img"
+          />
+
+          <div class="section-cards__card-tabs">
+            <div
+              class="section-cards__card-tabs-item section-cards__card-tabs-item--active"
+            >
+              Case Studies
+            </div>
+            <div class="section-cards__card-tabs-item">Blockchain</div>
           </div>
-          <p>
+
+          <p class="section-cards__card-text">
             “How HubSpot saved 25% on developing costs by switching to Simple.”
           </p>
-          <div class="porfile">
-            <div class="porfile-img text_small">HP</div>
-            <p class="porfile-name">By Harry Potter</p>
+
+          <div class="section-cards__card-profile">
+            <div class="section-cards__card-profile-img text_small">HP</div>
+            <p class="section-cards__card-profile-name">By Harry Potter</p>
           </div>
         </div>
-        <div class="card">
-          <img src="./assets/images/pc.jpg" alt="pc" />
-          <div class="tabs">
-            <div class="tab tab-1">Case Studies</div>
-            <div class="tab tab-2">Blockchain</div>
+
+        <div class="section-cards__card">
+          <img
+            src="./assets/images/pc.jpg"
+            alt="pc"
+            class="section-cards__card-img"
+          />
+
+          <div class="section-cards__card-tabs">
+            <div
+              class="section-cards__card-tabs-item section-cards__card-tabs-item--active"
+            >
+              Case Studies
+            </div>
+            <div class="section-cards__card-tabs-item">Blockchain</div>
           </div>
-          <p>
+
+          <p class="section-cards__card-text">
             “How HubSpot saved 25% on developing costs by switching to Simple.”
           </p>
-          <div class="porfile">
-            <div class="porfile-img text_small">HP</div>
-            <p class="porfile-name">By Harry Potter</p>
+
+          <div class="section-cards__card-profile">
+            <div class="section-cards__card-profile-img text_small">HP</div>
+            <p class="section-cards__card-profile-name">By Harry Potter</p>
           </div>
         </div>
-        <div class="card">
-          <img src="./assets/images/pc.jpg" alt="pc" />
-          <div class="tabs">
-            <div class="tab tab-1">Case Studies</div>
-            <div class="tab tab-2">Blockchain</div>
+
+        <div class="section-cards__card">
+          <img
+            src="./assets/images/pc.jpg"
+            alt="pc"
+            class="section-cards__card-img"
+          />
+
+          <div class="section-cards__card-tabs">
+            <div
+              class="section-cards__card-tabs-item section-cards__card-tabs-item--active"
+            >
+              Case Studies
+            </div>
+            <div class="section-cards__card-tabs-item">Blockchain</div>
           </div>
-          <p>
+
+          <p class="section-cards__card-text">
             “How HubSpot saved 25% on developing costs by switching to Simple.”
           </p>
-          <div class="porfile">
-            <div class="porfile-img text_small">HP</div>
-            <p class="porfile-name">By Harry Potter</p>
+
+          <div class="section-cards__card-profile">
+            <div class="section-cards__card-profile-img text_small">HP</div>
+            <p class="section-cards__card-profile-name">By Harry Potter</p>
           </div>
         </div>
-        <div class="card">
-          <img src="./assets/images/pc.jpg" alt="pc" />
-          <div class="tabs">
-            <div class="tab tab-1">Case Studies</div>
-            <div class="tab tab-2">Blockchain</div>
+
+        <div class="section-cards__card">
+          <img
+            src="./assets/images/pc.jpg"
+            alt="pc"
+            class="section-cards__card-img"
+          />
+
+          <div class="section-cards__card-tabs">
+            <div
+              class="section-cards__card-tabs-item section-cards__card-tabs-item--active"
+            >
+              Case Studies
+            </div>
+            <div class="section-cards__card-tabs-item">Blockchain</div>
           </div>
-          <p>
+
+          <p class="section-cards__card-text">
             “How HubSpot saved 25% on developing costs by switching to Simple.”
           </p>
-          <div class="porfile">
-            <div class="porfile-img text_small">HP</div>
-            <p class="porfile-name">By Harry Potter</p>
+
+          <div class="section-cards__card-profile">
+            <div class="section-cards__card-profile-img text_small">HP</div>
+            <p class="section-cards__card-profile-name">By Harry Potter</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="action">
-      <h4>Ready to get started?</h4>
-      <a href="./index.html" class="btn">Start for Free</a>
+      <h4 class="action__title">Ready to get started?</h4>
+      <a href="./index.html" class="action__btn">Start for Free</a>
     </section>
+
+    <footer class="footer">
+      <ul class="footer__column">
+        <span class="footer__column-title">Products</span>
+        <li class="footer__column-item">
+          <a href="./index.html">Web Studio</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">DynamicBox Flex</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">Programming Forms</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">Integrations</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">Command-line</a>
+        </li>
+      </ul>
+
+      <ul class="footer__column">
+        <span class="footer__column-title">Resources</span>
+        <li class="footer__column-item">
+          <a href="./index.html">Web Studio</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">DynamicBox Flex</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">Programming Forms</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">Integrations</a>
+        </li>
+        <li class="footer__column-item">
+          <a href="./index.html">Command-line</a>
+        </li>
+      </ul>
+
+      <ul class="footer__column">
+        <span class="footer__column-title">Subscribe</span>
+        <li class="footer__column-text">
+          Get the latest news and articles to your inbox every month.
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

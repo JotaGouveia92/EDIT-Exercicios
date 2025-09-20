@@ -200,34 +200,34 @@ input::-ms-reveal {
   background-color: white;
   font-family: "Inter Tight", sans-serif;
 }
-.nav .nav-right {
+.nav__brand {
   display: flex;
   align-items: center;
 }
-.nav .nav-right img {
+.nav__logo {
   height: 4rem;
   margin-right: 4rem;
 }
-.nav .nav-right .nav-right-menu {
+.nav__menu {
   display: flex;
   list-style: none;
   gap: 2rem;
 }
-.nav .nav-right .nav-right-menu li a {
+.nav__menu-link {
   text-decoration: none;
   color: black;
   font-weight: 500;
   font-size: 1rem;
 }
-.nav .nav-right .nav-right-menu li a:hover {
+.nav__menu-link:hover {
   text-decoration: underline;
 }
-.nav .nav-buttons {
+.nav__actions {
   display: flex;
   list-style: none;
   gap: 1rem;
 }
-.nav .nav-buttons .btn {
+.button {
   padding: 0.5rem 1.25rem;
   font-size: 1rem;
   font-weight: 500;
@@ -238,18 +238,18 @@ input::-ms-reveal {
   border-radius: 4px;
   transition: background-color 0.2s;
 }
-.nav .nav-buttons .btn.btn-white {
+.button--white {
   background-color: transparent;
   color: black;
 }
-.nav .nav-buttons .btn.btn-white:hover {
+.button--white:hover {
   text-decoration: underline;
 }
-.nav .nav-buttons .btn:not(.btn-white) {
+.button:not(.button--white) {
   background-color: black;
   color: white;
 }
-.nav .nav-buttons .btn:not(.btn-white):hover {
+.button:not(.button--white):hover {
   background-color: #333;
 }
 
