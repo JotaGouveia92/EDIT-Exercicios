@@ -302,7 +302,7 @@ input::-ms-reveal {
 }
 
 .header {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 6rem 2rem;
   text-align: center;
   background-color: #ffffff;
   font-family: "Inter Tight", sans-serif;
@@ -527,7 +527,6 @@ input::-ms-reveal {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 .info-cards__tabs-item:hover {
   background-color: #338cf4;
