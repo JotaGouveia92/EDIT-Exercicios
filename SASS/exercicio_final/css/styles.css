@@ -677,7 +677,7 @@ input::-ms-reveal {
   display: flex;
   justify-content: space-between;
   gap: 3rem;
-  padding: 3rem 2rem;
+  padding: 3rem 8rem;
   background: #ffffff;
   border-top: 1px solid #f1f1f1;
   font-family: "Inter Tight", sans-serif;
