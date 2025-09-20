@@ -2,12 +2,53 @@
 @import "_4typography";
 @import "_5colors";
 
+.button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  border: 1px solid transparent;
+  display: inline-block;
+
+  &--primary {
+    background-color: #0070f3;
+    color: $neutral-color-04;
+    border: none;
+
+    &:hover {
+      background-color: #005cd6;
+    }
+  }
+
+  &--dark {
+    background-color: $neutral-color-01;
+    color: $neutral-color-04;
+
+    &:hover {
+      background-color: $neutral-color-03;
+    }
+  }
+
+  &--circle {
+    background-color: $main-color-01;
+    color: $neutral-color-04;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+
+    &:hover {
+      background-color: $main-color-01;
+    }
+  }
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: $neutral-color-04;
   font-family: "Inter Tight", sans-serif;
 
   &__brand {
@@ -27,7 +68,7 @@
 
     &-link {
       text-decoration: none;
-      color: black;
+      color: $neutral-color-01;
       font-weight: 500;
 
       &:hover {
@@ -42,9 +83,8 @@
     gap: 1rem;
   }
 
-  // Botão hamburger
   &__toggle {
-    display: none; // escondido no desktop
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 2rem;
@@ -57,19 +97,18 @@
     &-bar {
       height: 3px;
       width: 100%;
-      background-color: black;
+      background-color: $neutral-color-01;
       border-radius: 2px;
       transition: 0.3s;
     }
   }
 
-  // Responsivo
   @media (max-width: 768px) {
     &__menu,
     &__actions {
-      display: none; // escondidos por padrão
+      display: none;
       flex-direction: column;
-      background: white;
+      background: $neutral-color-04;
       position: absolute;
       top: 100%;
       right: 0;
@@ -79,7 +118,7 @@
 
     &__menu.active,
     &__actions.active {
-      display: flex; // mostram quando ativo
+      display: flex;
     }
 
     &__toggle {
@@ -88,10 +127,10 @@
   }
 }
 
-.hero {
+.header {
   padding: 4rem 2rem;
   text-align: center;
-  background-color: #ffffff;
+  background-color: $neutral-color-04;
   font-family: "Inter Tight", sans-serif;
 
   &__title {
@@ -129,16 +168,16 @@
     }
 
     .button--circle {
-      position: absolute;
+      position: relative;
       bottom: 16px;
-      left: 50%;
+      left: 10%;
       transform: translateX(-50%);
     }
   }
 }
 
 .features {
-  background-color: white;
+  background-color: $neutral-color-02;
   text-align: center;
   padding: 4rem 2rem;
   font-family: "Inter Tight", sans-serif;
@@ -146,14 +185,19 @@
   &__content {
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 32px;
   }
 
   &__divider {
-    width: 60px;
-    height: 4px;
-    background-color: #000;
+    width: 1px;
+    height: 5rem;
+    background-color: $neutral-color-01;
     border: none;
-    margin: 2rem auto;
+
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   &__title {
@@ -165,7 +209,7 @@
 
   &__text {
     font-size: 1.125rem;
-    color: #444;
+    color: $neutral-color-01;
     line-height: 1.6;
     margin-bottom: 2rem;
   }
@@ -178,66 +222,24 @@
   }
 }
 
-// Botões como bloco reutilizável
-.button {
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
-  border: 1px solid transparent;
-  display: inline-block;
-
-  &--primary {
-    background-color: #0070f3;
-    color: white;
-    border: none;
-
-    &:hover {
-      background-color: #005cd6;
-    }
-  }
-
-  &--dark {
-    background-color: #111;
-    color: white;
-
-    &:hover {
-      background-color: #333;
-    }
-  }
-
-  &--circle {
-    background-color: #0070f3;
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-
-    &:hover {
-      background-color: #005cd6;
-    }
-  }
-}
-
 .solutions {
   position: relative;
   padding: 5rem 2rem;
   text-align: center;
-  background: #fff;
+  background-color: $neutral-color-04;
   font-family: "Inter Tight", sans-serif;
 
   &__title {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #111;
+    color: $neutral-color-01;
   }
 
   &__text {
     font-size: 1rem;
     line-height: 1.3rem;
-    color: #555;
+    color: $neutral-color-01;
     max-width: 700px;
     margin: 0 auto 3rem auto;
   }
@@ -276,7 +278,7 @@
   }
 
   &__card {
-    background: #fff;
+    background-color: $neutral-color-04;
     border-radius: 1rem;
     padding: 2rem 1.5rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -294,23 +296,22 @@
     height: 60px;
     margin: 0 auto 1rem auto;
     border-radius: 50%;
-    background: linear-gradient(135deg, #007bff, #00d4ff);
+    background: linear-gradient(135deg, $main-color-01, #00d4ff);
   }
 
   &__card-title {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #111;
+    color: $neutral-color-01;
   }
 
   &__card-text {
     font-size: 0.95rem;
-    color: #666;
+    color: $neutral-color-01;
     line-height: 1.5;
   }
 
-  /* Responsividade */
   @media (max-width: 1024px) {
     &__cards {
       grid-template-columns: repeat(2, 1fr);
@@ -318,15 +319,25 @@
   }
 
   @media (max-width: 576px) {
+    padding: 0;
+
     &__cards {
       grid-template-columns: 1fr;
+      margin: 0rem 2rem;
+    }
+
+    &__content {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      padding: 0;
     }
   }
 }
 
-.section-cards {
+.info-cards {
   padding: 5rem 2rem;
-  background: #fff;
+  background-color: $neutral-color-04;
   font-family: "Inter Tight", sans-serif;
 
   &__title {
@@ -337,7 +348,6 @@
     color: #111;
   }
 
-  /* Tabs principais */
   &__tabs {
     display: flex;
     justify-content: center;
@@ -348,25 +358,24 @@
     &-item {
       padding: 0.5rem 1.5rem;
       border-radius: 2rem;
-      background: #f4f4f4;
+      background-color: $neutral-color-02;
       font-size: 1rem;
       font-weight: 500;
       cursor: pointer;
-      transition: background 0.3s ease, color 0.3s ease;
+      transition: background-color 0.3s ease, color 0.3s ease;
 
       &:hover {
-        background: #007bff;
-        color: #fff;
+        background-color: #007bff;
+        color: $neutral-color-04;
       }
 
       &--active {
-        background: #007bff;
-        color: #fff;
+        background-color: #007bff;
+        color: $neutral-color-04;
       }
     }
   }
 
-  /* Lista de cards */
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -375,9 +384,8 @@
     margin: 0 auto;
   }
 
-  /* Card */
   &__card {
-    background: #fff;
+    background-color: $neutral-color-04;
     border-radius: 1rem;
     padding: 1.5rem;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -403,21 +411,16 @@
       gap: 0.5rem;
 
       &-item {
-        padding: 0.25rem 1rem;
+        padding: 0.75rem 1rem;
         border-radius: 2rem;
         font-size: 0.85rem;
-        background: #eee;
+        background-color: $neutral-color-02;
         cursor: pointer;
-        transition: background 0.3s ease;
-
-        &:hover {
-          background: #007bff;
-          color: #fff;
-        }
+        transition: background-color 0.3s ease;
 
         &--active {
-          background: #007bff;
-          color: #fff;
+          background: $main-color-01;
+          color: $neutral-color-04;
         }
       }
     }
@@ -425,7 +428,7 @@
     &-text {
       font-size: 1rem;
       line-height: 1.5;
-      color: #555;
+      color: $neutral-color-01;
       flex-grow: 1;
     }
 
@@ -439,23 +442,22 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background: linear-gradient(135deg, #007bff, #00d4ff);
+        background: linear-gradient(135deg, $main-color-01, #00d4ff);
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: 600;
-        color: #fff;
+        color: $neutral-color-04;
       }
 
       &-name {
         font-size: 0.9rem;
         font-weight: 500;
-        color: #111;
+        color: $neutral-color-01;
       }
     }
   }
 
-  /* Responsividade */
   @media (max-width: 1024px) {
     &__list {
       grid-template-columns: repeat(2, 1fr);
@@ -474,9 +476,9 @@
   }
 }
 
-.action {
-  background: #0066e6; // azul
-  color: #fff;
+.cta-block {
+  background: $main-color-01; // azul
+  color: $neutral-color-04;
   padding: 3rem 2rem;
   border-radius: 0.5rem;
   display: flex;
@@ -484,7 +486,7 @@
   align-items: center;
   font-family: "Inter Tight", sans-serif;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 1rem auto 4rem;
 
   &__title {
     font-size: 1.8rem;
@@ -492,8 +494,8 @@
   }
 
   &__btn {
-    background: #fff;
-    color: #0066e6;
+    background: $neutral-color-04;
+    color: $main-color-01;
     padding: 0.8rem 1.5rem;
     border-radius: 0.3rem;
     font-weight: 500;
@@ -502,11 +504,10 @@
     transition: all 0.3s ease;
 
     &:hover {
-      background: #f2f2f2;
+      background: $neutral-color-02;
     }
   }
 
-  /* Responsividade */
   @media (max-width: 768px) {
     flex-direction: column;
     text-align: center;
@@ -524,8 +525,10 @@
   justify-content: space-between;
   gap: 3rem;
   padding: 3rem 2rem;
-  background: #fff;
-  border-top: 1px solid #eee;
+  background: $neutral-color-04;
+
+  border-top: 1px solid $neutral-color-03;
+
   font-family: "Inter Tight", sans-serif;
 
   &__column {
@@ -548,23 +551,22 @@
 
       a {
         text-decoration: none;
-        color: #444;
+        color: $neutral-color-01;
         transition: color 0.2s ease;
 
         &:hover {
-          color: #007bff;
+          color: $main-color-01;
         }
       }
     }
 
     &-text {
       font-size: 0.9rem;
-      color: #555;
+      color: $neutral-color-01;
       line-height: 1.4;
     }
   }
 
-  /* Responsividade */
   @media (max-width: 768px) {
     flex-direction: column;
     gap: 2rem;
